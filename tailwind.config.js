@@ -1,6 +1,8 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./src/**/*.{html,js}"],
+  content: [
+    "./src/**/*.{js,jsx,ts,tsx}",
+  ],
   theme: {
     extend: {
       fontFamily:{
@@ -8,12 +10,17 @@ module.exports = {
          titleFont: ["Montserrat", "sans-serif"],
       },
         colors:{
-          bodyColor:"#000066",
-          lightText:"#212428",
-          boxBg:"linear-gradient(145deg,#0c214b, #012b56)",
+          bodyColor:"#212428",
+          lightText:"#c4cfde",
+          boxBg: "linear-gradient(145deg, #01e202, #23272b)",
           designColor:"#ff014f",
         },
+        boxShadow:{
+          shadowOne:"10px 10px 19px #1c1e22 -10px -10px 19px #262a2e"
+        }
+
     },
   },
   plugins: [],
-}
+};
+
