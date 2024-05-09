@@ -3,7 +3,7 @@ import { logo } from '../assets/index';
 
 export default function NavBar() {
   return (
- <div className='flex w-full h-20 mx-auto justify-between items-center font-titleFont'>
+ <div className='shadow border-b-[2px] border-b-black flex w-full h-20 mx-auto justify-between items-center font-titleFont'>
   <div>
     <img src={logo} alt='logo' width="70" height="70" className='rounded-full logo'/>
   </div>
