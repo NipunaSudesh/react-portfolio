@@ -3,6 +3,7 @@ import './App.css';
  import NavBar from "./Components/NavBar";
  import Home from "./Components/Home";
 import AboutUs from "./Components/AboutUs";
+import Projects from "./Components/Projects/Projects";
 
 function App() {
   return (
@@ -10,7 +11,8 @@ function App() {
       <div className="container max-w-screen-2xl mx-auto px-16">
         <NavBar/> 
         <Home/>
-        <AboutUs/>
+        <Projects/>
+    
       </div>
     </div>
 
