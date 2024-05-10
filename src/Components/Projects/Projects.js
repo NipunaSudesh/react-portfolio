@@ -1,5 +1,6 @@
 import React from 'react'
 import ProjectCard from './ProjectCard'
+import { eCom } from '../../assets/index'
 
 export default function Projects() {
   return (
@@ -8,12 +9,37 @@ export default function Projects() {
       <h1 className='flex justify-center items-center mt-10 text-6xl font-bold text-white'>My Projects</h1>
       </div>
         <div className='mt-10 grid grid-cols-3 gap-14'>
-          <ProjectCard/>
-          <ProjectCard/>
-          <ProjectCard/>
-          <ProjectCard/>
-          <ProjectCard/>
-          <ProjectCard/>
+          <ProjectCard 
+          title="E-Commerce WebSite"
+          des=" Lorem Ipsum text in a React application, you can either use a Lorem Ipsum generator library or create a simple function to t"
+          src={eCom}
+          />
+          <ProjectCard 
+          title="E-Commerce WebSite"
+          des=" Lorem Ipsum text in a React application, you can either use a Lorem Ipsum generator library or create a simple function to generate Lorem Ipsum text. Here's an example of a simple function that generates Lorem Ipsum text"
+          src={eCom}
+          />
+          <ProjectCard 
+          title="E-Commerce WebSite"
+          des=" Lorem Ipsum text in a React application, you can either use a Lorem Ipsum generator library or create a simple function to generate Lorem Ipsum text. Here's an example of a simple function that generates Lorem Ipsum text"
+          src={eCom}
+          />
+          <ProjectCard 
+          title="E-Commerce WebSite"
+          des=" Lorem Ipsum text in a React application, you can either use a Lorem Ipsum generator library or create a simple function to generate Lorem Ipsum text. Here's an example of a simple function that generates Lorem Ipsum text"
+          src={eCom}
+          />
+          <ProjectCard 
+          title="E-Commerce WebSite"
+          des=" Lorem Ipsum text in a React application, you can either use a Lorem Ipsum generator library or create a simple function to generate Lorem Ipsum text. Here's an example of a simple function that generates Lorem Ipsum text"
+          src={eCom}
+          />
+          <ProjectCard 
+          title="E-Commerce WebSite"
+          des="Lorem Ipsum text in a React application, you can either use a Lorem Ipsum generator library or create a simple function to generate Lorem Ipsum text. Here's an example of a simple function that generates Lorem Ipsum text"
+          src={eCom}
+          />
+
         </div>
     </section>
   )
