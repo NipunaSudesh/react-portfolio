@@ -56,7 +56,7 @@ export default function Home() {
         alt='myphoto'
         className='w-[500px] h-[680px] z-10'/>
 
-        <div className='absolute bottom-0 w-[500px] h-[670px] bg-gradient-to-r from-[#1e2024] to-[#202327]
+        <div className='absolute bottom-0 w-[500px] h-[670px] bg-gradient-to-r from-[#000080] to-[#00001a]
         shadow-shadowOne flex justify-center items-center'></div>
     </div>
 

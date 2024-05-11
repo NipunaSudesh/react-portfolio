@@ -12,8 +12,10 @@ function App() {
       <div className="container max-w-screen-2xl mx-auto px-16">
         <NavBar/> 
         <Home/>
+        <AboutUs />
         <MyServices />
         <Projects/>
+        
     
       </div>
     </div>

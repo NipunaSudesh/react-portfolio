@@ -4,9 +4,9 @@ import { FaGithub,FaGlobe } from "react-icons/fa";
 
 export default function ProjectCard({title,des,src}) {
   return (
-    <div className='w-full px-12 h-auto py-10 rounded-1g shadow-shadowOne flex flex-col
+    <div className='w-full  px-12 h-auto py-10 rounded-5g shadow-shadowOne flex flex-col
     bg-gradient-to-r from-bodyColor to-[#330080] group hover:bg-gradient-to-b
-    hover: from-gray-900, hover:gray-900 transition-colors duration-1000'>
+    hover: from-gray-900, hover:gray-900 transition-colors duration-1000 rounded-[5%]'>
         <div className='w-full h-[80%] overflow-hidden rounded-lg'>
             <img className='w-full h-60 object-cover group-hover:scale-110 duration-300' 
              src={src} alt='src'/>
