@@ -13,7 +13,7 @@ export default function ProjectCard({title,des,src}) {
         </div>
         <div className='w-full mt-5 flex flex-cols gap-6'>
              <div className='flex items-center justify-between'>
-             <h3 className=' font-normal text-designColor text-2xl '>{title}</h3>
+             <h3 className='  font-normal text-designColor text-2xl '>{title}</h3>
 
              </div>
              <div className='flex gap-2'>
