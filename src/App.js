@@ -4,6 +4,7 @@ import './App.css';
  import Home from "./Components/Home";
 import AboutUs from "./Components/AboutUs";
 import Projects from "./Components/Projects/Projects";
+import MyServices from "./Components/Services/MyServices";
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <div className="container max-w-screen-2xl mx-auto px-16">
         <NavBar/> 
         <Home/>
+        <MyServices />
         <Projects/>
     
       </div>

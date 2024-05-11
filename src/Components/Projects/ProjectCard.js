@@ -5,7 +5,7 @@ import { FaGithub,FaGlobe } from "react-icons/fa";
 export default function ProjectCard({title,des,src}) {
   return (
     <div className='w-full px-12 h-auto py-10 rounded-1g shadow-shadowOne flex flex-col
-    bg-gradient-to-r from-bodyColor to-[#202327] group hover:bg-gradient-to-b
+    bg-gradient-to-r from-bodyColor to-[#330080] group hover:bg-gradient-to-b
     hover: from-gray-900, hover:gray-900 transition-colors duration-1000'>
         <div className='w-full h-[80%] overflow-hidden rounded-lg'>
             <img className='w-full h-60 object-cover group-hover:scale-110 duration-300' 
@@ -13,7 +13,7 @@ export default function ProjectCard({title,des,src}) {
         </div>
         <div className='w-full mt-5 flex flex-cols gap-6'>
              <div className='flex items-center justify-between'>
-             <h3 className=' font-normal text-designColor text-2xl '>{title}</h3>
+             <h3 className='  font-normal text-designColor text-2xl '>{title}</h3>
 
              </div>
              <div className='flex gap-2'>
