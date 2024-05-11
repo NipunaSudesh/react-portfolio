@@ -1,10 +1,13 @@
 import logo from "./images/logo.png";
-import myself from "./images/my.jpg"
+import my from "./images/my.png"
+import profile from "./images/profile.png"
 import eCom from "./images/work-1.png"
+
 
 
 export{
     logo,
-    myself,
-    eCom
+    my,
+    eCom,
+    profile
 };

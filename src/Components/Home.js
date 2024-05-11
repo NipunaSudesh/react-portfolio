@@ -1,7 +1,7 @@
 import React from 'react'
 import {FaInstagram,FaLinkedin, FaFacebook, FaReact, FaNodeJs,FaDatabase} from "react-icons/fa";
 import { SiMongodb,SiExpress } from "react-icons/si";
-import { myself } from '../assets/index';
+import { myself ,my, profile} from '../assets/index';
 
 export default function Home() {
   return (
@@ -52,11 +52,11 @@ export default function Home() {
 
 
     <div className='w-1/2 flex justify-center items-center relative'>
-        <img src={myself}
+        <img src={profile}
         alt='myphoto'
         className='w-[500px] h-[680px] z-10'/>
 
-        <div className='absolute bottom-0 w-[500px] h-[500px] bg-gradient-to-r from-[#1e2024] to-[#202327]
+        <div className='absolute bottom-0 w-[500px] h-[670px] bg-gradient-to-r from-[#1e2024] to-[#202327]
         shadow-shadowOne flex justify-center items-center'></div>
     </div>
 
