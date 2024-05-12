@@ -21,8 +21,8 @@ export default function AboutUs() {
           <li className='aboutList'>Experience</li>
         </ul>
       </div>
-      <div class="container mx-auto px-2 py-2 ">
-      <div class="flex flex-col gap-2">
+      <div class="container mx-auto  ">
+      <div class="w-full grid grid-cols-2 gap-2">
       <AboutDetails title="UI/UX" des="Designing web/App interface"/>
       <AboutDetails title="web Development" des="Web App development"/>
       <AboutDetails title="App Development" des="App Development"/>
