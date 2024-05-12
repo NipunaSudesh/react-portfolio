@@ -2,7 +2,7 @@ import "../node_modules/bootstrap/dist/css/bootstrap.min.css"; // Import Bootstr
 import './App.css';
  import NavBar from "./Components/NavBar";
  import Home from "./Components/Home";
-import AboutUs from "./Components/AboutUs";
+import AboutUs from "./Components/About/AboutUs";
 import Projects from "./Components/Projects/Projects";
 import MyServices from "./Components/Services/MyServices";
 
