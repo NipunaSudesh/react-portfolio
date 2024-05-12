@@ -1,8 +1,17 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { my } from '../../assets'
 import AboutDetails from './AboutDetails';
+import Education from './Education';
+import Experience from './Experience';
+import Skill from './Skill';
 
 export default function AboutUs() {
+
+  const [educationData,setEducationData]=useState(true);
+  const [skillsData,setSkillsData]=useState(false);
+  const [experienceData,setExperienceData]=useState(false);
+
+
   return (
     <section id="AboutUs" className='w-full h-[750px] pt-20 pb-20 flex border-b-[2px] border-b-black'>
 
@@ -16,19 +25,14 @@ export default function AboutUs() {
       </div>
       <div>
         <ul className='w-full grid grid-cols-4 gap-4 text-2xl text-white'>
-          <li className='aboutList'>Education</li>
-          <li className='aboutList'>Professional Skills</li>
-          <li className='aboutList'>Experience</li>
+          <li onClick={()=>setEducationData(true) & setSkillsData(false) & setExperienceData(false)} className='aboutList'>Education</li>
+          <li onClick={()=>setEducationData(false) & setSkillsData(true) & setExperienceData(false)} className='aboutList'>Professional Skills</li>
+          <li  onClick={()=>setEducationData(false) & setSkillsData(false) & setExperienceData(true)} className='aboutList'>Experience</li>
         </ul>
       </div>
-      <div class="container mx-auto  ">
-      <div class="w-full grid grid-cols-2 gap-2">
-      <AboutDetails title="UI/UX" des="Designing web/App interface"/>
-      <AboutDetails title="web Development" des="Web App development"/>
-      <AboutDetails title="App Development" des="App Development"/>
-      <AboutDetails title="UI/UX" des="Designing web/App interface"/>
-        </div>
-      </div>
+      {educationData  && <Education />}
+      {skillsData && <Skill />}
+      {experienceData && <Experience />}
     </div>
 
   </section>
