@@ -1,5 +1,5 @@
 import React from 'react'
-import { my } from '../assets'
+import { my } from '../../assets'
 
 export default function AboutUs() {
   return (
@@ -12,6 +12,13 @@ export default function AboutUs() {
     <div className='flex flex-col gap-7'>
       <h1 className='flex justify-center items-center mt-10 text-6xl font-bold text-white'>About Us</h1>
       <p className='text-l tracking-wide mt-3 hover:text-gray-100 duration-300'>I'm Nipuna Sudesh, a passionate and driven Software Engineering undergraduate student at the University of Kelaniya. I welcome you to explore my portfolio, where I showcase my journey, skills, and projects in the world of software development.</p>
+      </div>
+      <div>
+        <ul className='w-full grid grid-cols-4'>
+          <li className='aboutList'>Education</li>
+          <li className='aboutList'>Professional Skills</li>
+          <li className='aboutList'>Experience</li>
+        </ul>
       </div>
     </div>
 
