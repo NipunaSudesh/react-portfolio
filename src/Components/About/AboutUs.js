@@ -25,12 +25,14 @@ export default function AboutUs() {
       </div>
       <div>
         <ul className='w-full grid grid-cols-4 gap-4 text-2xl text-white'>
-          <li className='aboutList'>Education</li>
-          <li className='aboutList'>Professional Skills</li>
-          <li className='aboutList'>Experience</li>
+          <li onClick={()=>setEducationData(true) & setSkillsData(false) & setExperienceData(false)} className='aboutList'>Education</li>
+          <li onClick={()=>setEducationData(false) & setSkillsData(true) & setExperienceData(false)} className='aboutList'>Professional Skills</li>
+          <li  onClick={()=>setEducationData(false) & setSkillsData(false) & setExperienceData(true)} className='aboutList'>Experience</li>
         </ul>
       </div>
-      <Skill />
+      {educationData  && <Education />}
+      {skillsData && <Skill />}
+      {experienceData && <Experience />}
     </div>
 
   </section>
