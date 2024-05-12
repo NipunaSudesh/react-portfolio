@@ -1,10 +1,17 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { my } from '../../assets'
 import AboutDetails from './AboutDetails';
 import Education from './Education';
 import Experience from './Experience';
+import Skill from './Skill';
 
 export default function AboutUs() {
+
+  const [educationData,setEducationData]=useState(true);
+  const [skillsData,setSkillsData]=useState(false);
+  const [experienceData,setExperienceData]=useState(false);
+
+
   return (
     <section id="AboutUs" className='w-full h-[750px] pt-20 pb-20 flex border-b-[2px] border-b-black'>
 
@@ -23,7 +30,7 @@ export default function AboutUs() {
           <li className='aboutList'>Experience</li>
         </ul>
       </div>
-      
+      <Skill />
     </div>
 
   </section>
