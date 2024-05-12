@@ -1,7 +1,7 @@
 import React from 'react'
-import {FaInstagram,FaLinkedin, FaFacebook, FaReact, FaNodeJs,FaDatabase} from "react-icons/fa";
+import {FaInstagram,FaLinkedin, FaFacebook, FaReact, FaNodeJs} from "react-icons/fa";
 import { SiMongodb,SiExpress } from "react-icons/si";
-import { myself ,my, profile} from '../assets/index';
+import { profile} from '../assets/index';
 
 export default function Home() {
   return (
