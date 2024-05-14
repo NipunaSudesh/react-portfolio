@@ -45,7 +45,7 @@ export default function NavBar() {
   }, []);
 
   return (
-    <div className='shadow sticky top-0 z-50 bg-bodyColor border-b-[2px] border-b-black flex w-full h-20 mx-auto justify-between items-center font-titleFont'>
+    <div className='shadow sticky top-0 z-50 bg-bodyColor border-b-[2px] border-b-black flex w-full h-20 mx-auto justify-between items-center font-normal'>
       <div>
         <img src={logo} alt='logo' width="70" height="70" className='rounded-full logo'/>
       </div>
