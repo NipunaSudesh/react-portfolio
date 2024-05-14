@@ -24,21 +24,7 @@ export default function Projects() {
           des=" Lorem Ipsum text in a React application, you can either use a Lorem Ipsum generator library or create a simple function to generate Lorem Ipsum text. Here's an example of a simple function that generates Lorem Ipsum text"
           src={eCom}
           />
-          <ProjectCard 
-          title="E-Commerce WebSite"
-          des=" Lorem Ipsum text in a React application, you can either use a Lorem Ipsum generator library or create a simple function to generate Lorem Ipsum text. Here's an example of a simple function that generates Lorem Ipsum text"
-          src={eCom}
-          />
-          <ProjectCard 
-          title="E-Commerce WebSite"
-          des=" Lorem Ipsum text in a React application, you can either use a Lorem Ipsum generator library or create a simple function to generate Lorem Ipsum text. Here's an example of a simple function that generates Lorem Ipsum text"
-          src={eCom}
-          />
-          <ProjectCard 
-          title="E-Commerce WebSite"
-          des="Lorem Ipsum text in a React application, you can either use a Lorem Ipsum generator library or create a simple function to generate Lorem Ipsum text. Here's an example of a simple function that generates Lorem Ipsum text"
-          src={eCom}
-          />
+
 
         </div>
     </section>
