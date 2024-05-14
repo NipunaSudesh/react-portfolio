@@ -13,7 +13,7 @@ export default function NavBar() {
       const projectsSection = document.getElementById('Projects');
       const contactSection = document.getElementById('ContectMe');
 
-      const scrollPosition = window.scrollY + 200; // Adjusted for better accuracy
+      const scrollPosition = window.scrollY + 200;
 
       if (
         scrollPosition < aboutSection.offsetTop &&
