@@ -1,5 +1,4 @@
 import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
-import './App.css';
  import NavBar from "./Components/NavBar";
  import Home from "./Components/Home";
 import AboutUs from "./Components/About/AboutUs";
