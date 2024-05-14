@@ -4,7 +4,7 @@ import { eCom } from '../../assets/index'
 
 export default function Projects() {
   return (
-    <section id='Projects' className='w-full border-b-[2px] boder-b-black'>
+    <section id='Projects' className='w-full border-b-[2px] boder-b-black mb-10'>
       <div >
       <h1 className='flex justify-center items-center mt-10 text-6xl font-bold text-white'>My Projects</h1>
       </div>
