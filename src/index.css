@@ -11,6 +11,9 @@
          justify-center rounded-md shadow-shadowOne hover:bg-opacity-40 hover:translate-y-1 
          transition-all hover:text-designColor cursor-pointer duration-300;
     }
+    .inputText {
+        @apply w-full h-12 mt-1 my-4 rounded-[10px] border-b border-b-gray-600 shadow-shadowOne bg-[#262a2e] text-white px-10 active:outline-none hover:outline-designColor focus-visible:outline-designColor outline-none focus-visible:border-b-transparent duration-300;
+      }
 }
 
 
