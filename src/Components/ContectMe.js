@@ -1,5 +1,5 @@
 import React from 'react'
-import {contactImg} from "../assets/index";
+import {contactImg,cv} from "../assets/index";
 import {FaInstagram,FaLinkedin, FaFacebook} from "react-icons/fa";
 
 export default function ContectMe() {
@@ -24,17 +24,20 @@ export default function ContectMe() {
               </div>
               <div>
             <h2 className=' text-white text-base uppercase font-titleFont mb-2'>Find Me In</h2>
-            <div className='flex gap-4'>
-                <span className='bannerIcon'>
+            <div className='flex gap-4 w-full justify-center'>
+                <span className=' w-10 h-10 bannerIcon'>
                     <FaFacebook/>
                 </span>    
-                <span className='bannerIcon'>
+                <span className='w-10 h-10 bannerIcon'>
                     <FaInstagram/>
                 </span>    
-                <span className='bannerIcon'>
+                <span className='w-10 h-10 bannerIcon'>
                     <FaLinkedin />
                 </span>   
-            </div>      
+            </div>  
+            <div className='w-full mt-4 mb-3 flex items-center justify-center '>
+            <a href={cv}  className="btn bg-primary text-white">Download CV</a>
+              </div>    
         </div>
           </div>
         
