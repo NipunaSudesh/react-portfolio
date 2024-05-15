@@ -12,7 +12,10 @@ export default function ContectMe() {
   const [errorMsg,setErrorMsg]=useState("");
   const [successMsg,setSuccessMsg]=useState("");
 
-
+  const emailValidation = (email) => {
+    const re = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+    return re.test(String(email).toLowerCase());
+  };
 
   const HandleSend=(e)=>{
     e.preventDefault()
