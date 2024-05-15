@@ -5,8 +5,8 @@ import { profile} from '../assets/index';
 
 export default function Home() {
   return (
-  <section id="Home" className='w-full pt-10 b-20 h-[800px] pb-24 flex border-b-[2px] border-b-black'>
-    <div className='w-1/2 flex flex-col gap-16'>
+  <section id="Home" className='w-full flex-col lgl:flex-row xl:gap-0 lgl:gap-4 pt-10 b-20 pb-24 flex border-b-[2px] border-b-black'>
+    <div className='w-full lgl:w-1/2 flex flex-col gap-16'>
         <div className='flex flex-col gap-3'>
             <h4 className=' font-normal mt-4'>Welcome To My Portfolio</h4>
             <h1 className='text-6xl font-bold text-white'>Hi, I'm <br/> 
@@ -15,7 +15,7 @@ export default function Home() {
             <h2>A Software Engineer.</h2>
             <p className='text-white'>A software undergraduate student passionate about building innovative software solutions. Currently honing my skills in MERN Stack, with a keen interest in web development and Data science. You can find some of my projects here on GitHub, and I'm always open to collaboration and learning opportunities. </p>
         </div >
-        <div className='flex justify-between'>
+        <div className='flex justify-between flex-col xl:flex-row gap-6 lgl:gap-0'>
         <div>
         <h2 className='text-white text-base uppercase font-titleFont mb-2'>Find Me In</h2>
         <div className='flex gap-4'>
@@ -51,13 +51,13 @@ export default function Home() {
     </div>
 
 
-    <div className='w-1/2 flex justify-center items-center relative'>
+    <div className='w-full lgl:w-1/2 flex justify-center items-center relative '>
         <img src={profile}
         alt='myphoto'
-        className='w-[500px] h-[680px] z-10'/>
+        className='w-[300px] h-[400px] lgl:w-[500px] lgl:h-[680px] z-10' />
 
-        <div className='absolute bottom-0 w-[500px] h-[670px] bg-gradient-to-r from-[#2d313a] to-[#0e1114]
-        shadow-shadowOne flex justify-center items-center'></div>
+        <div className='absolute bottom-0 w-[300px] h-[380px] lgl:w-[500px] lgl:h-[680px] bg-gradient-to-r from-[#2d313a] to-[#0e1114]
+        shadow-shadowOne flex justify-center items-center rounded-[8%]'></div>
     </div>
 
   </section>
