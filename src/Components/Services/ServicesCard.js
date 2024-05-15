@@ -15,7 +15,7 @@ export default function ServicesCard({title,des,icon}) {
        </div>
        <div className='flex flex-col gap-6'>
        <h2 className='text-white font-normal'>{title}</h2>
-       <p className='text-base text-sm tracking-wide mt-3 hover:text-gray-100 duration-300'>{des}</p>
+       <p className='text-base text-xl md:text-sm tracking-wide mt-3 hover:text-gray-100 duration-300'>{des}</p>
        <span className='text-2xl text-designColor'>
         <FaArrowRight/>
        </span>
