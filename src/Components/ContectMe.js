@@ -1,8 +1,49 @@
-import React from 'react'
+import React, { useState } from 'react'
 import {contactImg,cv} from "../assets/index";
 import {FaInstagram,FaLinkedin, FaFacebook} from "react-icons/fa";
 
 export default function ContectMe() {
+
+  const [name,setName]=useState("");
+  const [number,setNumber]=useState("");
+  const [Email,setEmail]=useState("");
+  const [subject,setSubject]=useState("");
+  const [massage,setMassage]=useState("");
+  const [errorMsg,setErrorMsg]=useState("");
+  const [successMsg,setSuccessMsg]=useState("");
+
+  const emailValidation = (email) => {
+    const re = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+    return re.test(String(email).toLowerCase());
+  };
+
+  const HandleSend=(e)=>{
+    e.preventDefault()
+      if(name===""){
+        setErrorMsg("Name is Required!");
+        }else if(number===""){
+          setErrorMsg("Number is Required!");
+        }else if(Email===""){
+          setErrorMsg("Email is Required!");
+        }else if(!emailValidation(Email)){
+          setErrorMsg("Email is not valid!");
+        }else if(subject===""){
+          setErrorMsg("subject is Required!");
+        }else if(massage===""){
+          setErrorMsg("massage is Required!");
+        }else{
+            setSuccessMsg("Your Massage Send Succesfully!");
+            setName("");
+            setNumber("");
+            setEmail("");
+            setSubject("");
+            setMassage("");
+
+        }
+
+      
+      }
+
   return (
     <section id="ContectMe" className='w-full h-[920px] pt-10 pb-10 border-b-[2px] border-b-black gap-4'>
 
@@ -53,6 +94,8 @@ export default function ContectMe() {
          <div className='w-1/2 flex flex-col'>
           <label className='text-sm text-gray-400 uppercase tracking-wide'>Your Name</label>
           <input type='text' 
+          onChange={(e)=>setName(e.target.value)}
+          value={name}
           className='inputText'
           placeholder='Enter Your Name'
           />
@@ -60,6 +103,8 @@ export default function ContectMe() {
          <div className='w-1/2 flex flex-col'>
           <label className='text-sm text-gray-400 uppercase tracking-wide'>Your Phone Number</label>
           <input type='text' required
+                    onChange={(e)=>setNumber(e.target.value)}
+                    value={Number}
           className='inputText'
           placeholder='Enter Phone Number'
           />
@@ -69,12 +114,16 @@ export default function ContectMe() {
          <div >
           <label className='text-sm text-gray-400 uppercase tracking-wide'>Your Phone Email</label>
           <input type='email' required
+                    onChange={(e)=>setEmail(e.target.value)}
+                    value={Email}
           className='inputText'
           placeholder='Enter Phone Email'
           />
             </div>
          <div>
           <label className='text-sm text-gray-400 uppercase tracking-wide'>Subject</label>
+          onChange={(e)=>setSubject(e.target.value)}
+          value={Subject}
           <input type='text' 
           className='inputText'
           placeholder='Enter Subject'
@@ -84,11 +133,13 @@ export default function ContectMe() {
           <label className='text-sm text-gray-400 uppercase tracking-wide'>Massage</label>
           <textarea cols="30" rows="15" type='text' 
           className='inputText'
+          onChange={(e)=>setMassage(e.target.value)}
+          value={Massage}
           placeholder='Enter Your Massage'
           ></textarea>
             </div>
             <div className='w-full mt-4 mb-3 flex items-center justify-center '>
-              <button  className="btn btn-outline-primary shadow-shadowOne hover:bg-opacity-40 hover:translate-y-1 
+              <button onClick={HandleSend} className="btn btn-outline-primary shadow-shadowOne hover:bg-opacity-40 hover:translate-y-1 
          transition-all cursor-pointer duration-300 text-white mx-4">Send Massage</button>
             </div>
         </form>
