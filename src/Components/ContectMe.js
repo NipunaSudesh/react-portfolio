@@ -32,13 +32,13 @@ export default function ContectMe() {
         }else if(massage===""){
           setErrorMsg("massage is Required!");
         }else{
-            setSuccessMsg("Your Massage Send Succesfully!");
+            setSuccessMsg(`Thank You ${name}, Your Massage Send Succesfully!`);
             setName("");
             setNumber("");
             setEmail("");
             setSubject("");
             setMassage("");
-
+            console.log(name,number,Email,subject,massage)
         }
 
       
@@ -46,7 +46,9 @@ export default function ContectMe() {
 
   return (
     <section id="ContectMe" className='w-full h-[920px] pt-10 pb-10 border-b-[2px] border-b-black gap-4'>
-
+              <div className='w-full'>
+      <h1 className='flex justify-center items-center mt-5 text-6xl font-bold text-white'>Contect With Me</h1>
+      </div>
 
       <div className='w-full pt-10'>
         <div className='w-full h-[720px] flex justify-betweeen gap-4'>
@@ -81,14 +83,18 @@ export default function ContectMe() {
         </div>
           </div>
 
-
-        
       <div className='w-[60%] bg-dark h-full flex flex-col gap-5 justify-betweeen rounded-[5%] bg-gradient-to-r from-[#484c56] to-[#23272b] shadow-shadowOne'>
-
+        
         <form className='w-[95%] mx-2 flex flex-col gap-2 py-2'>
-        <div className='w-full'>
-      <h1 className='flex justify-center items-center mt-5 text-6xl font-bold text-white'>Contect With Me</h1>
-      </div>
+      {
+        errorMsg && <p className=' rounded-[8px] py-3 mt-3 bg-gradient-to-r from-[#1e2024] to-[#23272b] shadow-shadowOne text-center text-designColor text-base tracking-wide animate-bounce'
+        >{errorMsg}</p>
+      }
+      {
+        successMsg && <p className='rounded-[8px] pt-3 bg-gradient-to-r from-[#1e2024] to-[#23272b] shadow-shadowOne text-center text-[#08e605] text-base tracking-wide animate-bounce'
+        >{successMsg}</p>
+      }
+      
           <div className='w-full mt-5 flex gap-10'>
 
          <div className='w-1/2 flex flex-col'>
@@ -96,7 +102,9 @@ export default function ContectMe() {
           <input type='text' 
           onChange={(e)=>setName(e.target.value)}
           value={name}
-          className='inputText'
+          className={`${errorMsg==="Name is Required!" &&
+            "outline-designColor"
+          } inputText `}
           placeholder='Enter Your Name'
           />
             </div>
@@ -104,8 +112,10 @@ export default function ContectMe() {
           <label className='text-sm text-gray-400 uppercase tracking-wide'>Your Phone Number</label>
           <input type='text' required
                     onChange={(e)=>setNumber(e.target.value)}
-                    value={Number}
-          className='inputText'
+                    value={number}
+                    className={`${errorMsg==="Number is Required!" &&
+            "outline-designColor"
+          } inputText `}
           placeholder='Enter Phone Number'
           />
             </div>
@@ -116,25 +126,33 @@ export default function ContectMe() {
           <input type='email' required
                     onChange={(e)=>setEmail(e.target.value)}
                     value={Email}
-          className='inputText'
+                    className={`${errorMsg==="Email is Required!" ||
+                     errorMsg==="Email is not valid!" 
+                    &&
+            "outline-designColor"
+          } inputText `}
           placeholder='Enter Phone Email'
           />
             </div>
          <div>
           <label className='text-sm text-gray-400 uppercase tracking-wide'>Subject</label>
-          onChange={(e)=>setSubject(e.target.value)}
-          value={Subject}
           <input type='text' 
-          className='inputText'
+                    onChange={(e)=>setSubject(e.target.value)}
+                    value={subject}
+                    className={`${errorMsg==="Subject is Required!" &&
+            "outline-designColor"
+          } inputText `}
           placeholder='Enter Subject'
           />
             </div>
          <div>
           <label className='text-sm text-gray-400 uppercase tracking-wide'>Massage</label>
           <textarea cols="30" rows="15" type='text' 
-          className='inputText'
+                    className={`${errorMsg==="Massage is Required!" &&
+                    "outline-designColor"
+                  } inputText `}
           onChange={(e)=>setMassage(e.target.value)}
-          value={Massage}
+          value={massage}
           placeholder='Enter Your Massage'
           ></textarea>
             </div>
