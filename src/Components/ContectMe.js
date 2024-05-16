@@ -45,14 +45,14 @@ export default function ContectMe() {
       }
 
   return (
-    <section id="ContectMe" className='w-full h-[920px] pt-10 pb-10 border-b-[2px] border-b-black gap-4'>
+    <section id="ContectMe" className='w-full h-auto pt-10 pb-10 border-b-[2px] border-b-black gap-4'>
               <div className='w-full'>
-      <h1 className='flex justify-center items-center mt-5 text-6xl font-bold text-white'>Contect With Me</h1>
+      <h1 className=' flex justify-center items-center mt-5 text-6xl font-bold text-white'>Contect With Me</h1>
       </div>
 
-      <div className='w-full pt-10'>
-        <div className='w-full h-[720px] flex justify-betweeen gap-4'>
-          <div className='bg-gradient-to-r from-[#1e2024] to-[#414951] p-8 w-[35%] h-full rounded-[5%]'>
+      <div className='w-full pt-10 lgl:flex-rows flex gap-4'>
+        <div className='w-full flex-col lgl:flex-row xl:gap-4 lgl:gap-10 flex justify-betweeen gap-8'>
+          <div className='w-full bg-gradient-to-r from-[#1e2024] to-[#414951] p-4 lgl:p-8 lgl:w-[35%] h-full rounded-[5%]'>
             <img src={contactImg}
              className='rounded-[5%] w-full h-64 object-cover shadow-shadowOne'
               alt='contactImg'></img>
@@ -83,7 +83,7 @@ export default function ContectMe() {
         </div>
           </div>
 
-      <div className='w-[60%] bg-dark h-full flex flex-col gap-5 justify-betweeen rounded-[5%] bg-gradient-to-r from-[#484c56] to-[#23272b] shadow-shadowOne'>
+      <div className='w-full lgl:w-[60%] p-4 lgl:p-8 bg-dark h-full flex flex-col gap-5 justify-betweeen rounded-[5%] bg-gradient-to-r from-[#484c56] to-[#23272b] shadow-shadowOne'>
         
         <form className='w-[95%] mx-2 flex flex-col gap-2 py-2'>
       {
@@ -95,9 +95,9 @@ export default function ContectMe() {
         >{successMsg}</p>
       }
       
-          <div className='w-full mt-5 flex gap-10'>
+          <div className='w-full mt-5 lgl:flex gap-10'>
 
-         <div className='w-1/2 flex flex-col'>
+         <div className='w-full lgl:w-1/2 flex-row lgl:flex-col'>
           <label className='text-sm text-gray-400 uppercase tracking-wide'>Your Name</label>
           <input type='text' 
           onChange={(e)=>setName(e.target.value)}
@@ -108,7 +108,7 @@ export default function ContectMe() {
           placeholder='Enter Your Name'
           />
             </div>
-         <div className='w-1/2 flex flex-col'>
+         <div className='w-full lgl:w-1/2 flex-row lgl:flex-col'>
           <label className='text-sm text-gray-400 uppercase tracking-wide'>Your Phone Number</label>
           <input type='text' required
                     onChange={(e)=>setNumber(e.target.value)}
