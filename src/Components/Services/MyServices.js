@@ -9,7 +9,7 @@ export default function MyServices() {
     <div>
       <h1 className='flex justify-center items-center mt-10 text-6xl font-bold text-white'>My Services</h1>
     </div>
-    <div className='mt-10 grid-cols-1 md:grid-3 grid xl:grid-cols-3 gap-6 lgl:flex xl:gap-20'>
+    <div className='mt-10 grid-cols-1 mdl:grid-cols-2 grid xl:grid-cols-3 gap-6 lgl:flex xl:gap-20'>
     <ServicesCard 
       title="App Development"
       des="Lorem Ipsum text in a React application, you can either use a Lorem Ipsum generator library or create a simple function to generate "
