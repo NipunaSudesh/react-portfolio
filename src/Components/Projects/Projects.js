@@ -8,7 +8,7 @@ export default function Projects() {
       <div >
       <h1 className='flex justify-center items-center mt-10 text-6xl font-bold text-white'>My Projects</h1>
       </div>
-        <div className='mt-10 grid grid-cols-3 gap-14'>
+        <div className='mt-10 grid grid-cols-1 mdl:grid-cols-2 xl:grid-cols-3 lgl:flex xl:gap-20 gap-14 '>
           <ProjectCard 
           title="E-Commerce WebSite"
           des=" Lorem Ipsum text in a React application, you can either use a Lorem Ipsum generator library or create a simple function to t"

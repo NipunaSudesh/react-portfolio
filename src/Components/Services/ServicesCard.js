@@ -3,7 +3,7 @@ import { FaArrowRight } from "react-icons/fa";
 
 export default function ServicesCard({title,des,icon}) {
   return (
-    <div className='w-full px-12 h-auto py-10 rounded-1g shadow-shadowOne flex flex-col
+    <div className='w-full p-4 xl:px-12 h-auto xl:py-10 rounded-1g shadow-shadowOne flex flex-col
     bg-gradient-to-r from-bodyColor to-[#330080] group hover:bg-gradient-to-b
     hover: from-black, hover:to-[#1e2024] transition-colors duration-100 group rounded-[5%]'>
 
@@ -15,7 +15,7 @@ export default function ServicesCard({title,des,icon}) {
        </div>
        <div className='flex flex-col gap-6'>
        <h2 className='text-white font-normal'>{title}</h2>
-       <p className='text-base text-sm tracking-wide mt-3 hover:text-gray-100 duration-300'>{des}</p>
+       <p className='text-base text-xl md:text-sm tracking-wide mt-3 hover:text-gray-100 duration-300'>{des}</p>
        <span className='text-2xl text-designColor'>
         <FaArrowRight/>
        </span>
