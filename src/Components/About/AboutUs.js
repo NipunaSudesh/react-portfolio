@@ -25,7 +25,7 @@ export default function AboutUs() {
           <p className='text-l tracking-wide mt-3 hover:text-gray-100 duration-300'>I'm Nipuna Sudesh, a passionate and driven Software Engineering undergraduate student at the University of Kelaniya. I welcome you to explore my portfolio, where I showcase my journey, skills, and projects in the world of software development.</p>
         </div>
         <div className='flex flex-col gap-4'>
-          <ul className='w-full sml:flex sml:flex-col sml:gap-2 grid grid-cols-3 gap-4 text-2xl text-white '>
+          <ul className='w-full flex flex-col gap-2 md:grid md:grid-cols-3 md-gap-2 lgl:grid lgl:grid-cols-3 gap-4 text-2xl text-white '>
             <li onClick={() => { setEducationData(true); setSkillsData(false); setExperienceData(false); setActiveLink('education'); }}
               className={`cursor-pointer hover:text-designColor ${activeLink === 'education' ? 'underline text-designColor' : ''}`}>
               Education
