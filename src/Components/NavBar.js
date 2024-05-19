@@ -117,10 +117,7 @@ export default function NavBar() {
             <div className="flex flex-col gap-8 py-2 relative">
               <div>
                 <img className="w-32 rounded-full" src={logo} alt="logo" />
-                <p className="text-sm text-gray-400 mt-2">
-                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                  Earum soluta perspiciatis molestias enim cum repellat, magnam
-                  exercitationem distinctio aliquid nam.
+                <p className="text-sm text-gray-400 mt-2">A software undergraduate student passionate about building innovative software solutions. Currently honing my skills in MERN Stack, with a keen interest in web development and Data science. You can find some of my projects here on GitHub, and I'm always open to collaboration and learning opportunities.
                 </p>
               </div>
 
