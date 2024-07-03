@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import {contactImg,cv} from "../assets/index";
 import {FaInstagram,FaLinkedin, FaFacebook} from "react-icons/fa";
+import { FaGithub } from "react-icons/fa";
 
 export default function ContectMe() {
 
@@ -66,15 +67,21 @@ export default function ContectMe() {
               <div>
             <h2 className=' text-white text-base uppercase font-titleFont mb-2'>Find Me In</h2>
             <div className='flex gap-4 w-full justify-center'>
-                <span className=' w-10 h-10 bannerIcon'>
-                    <FaFacebook/>
-                </span>    
-                <span className='w-10 h-10 bannerIcon'>
-                    <FaInstagram/>
-                </span>    
-                <span className='w-10 h-10 bannerIcon'>
-                    <FaLinkedin />
-                </span>   
+            <div className='flex gap-4'>
+
+<div className='bannerIcon'>
+    <a href='https://github.com/NipunaSudesh'>
+    <FaGithub/></a>
+</div>
+<div className='bannerIcon'>
+    <a href='https://www.linkedin.com/in/nipuna-sudesh-27a1a8253/?lipi=urn%3Ali%3Apage%3Ad_flagship3_feed%3BlrJGSoIkQ%2B%2BTVScw3NZvKQ%3D%3D'>
+    <FaLinkedin/></a>
+</div>
+<div className='bannerIcon'>
+    <a href='https://www.facebook.com/nipuna.sudesh/52'>
+    <FaFacebook/></a>
+</div>
+</div>  
             </div>  
             <div className='w-full mt-4 mb-3 flex items-center justify-center '>
             <a href={cv}  className="btn btn-outline-primary shadow-shadowOne hover:bg-opacity-40 hover:translate-y-1 

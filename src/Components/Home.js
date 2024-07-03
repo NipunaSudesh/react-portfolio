@@ -1,6 +1,7 @@
 import React from 'react'
 import {FaInstagram,FaLinkedin, FaFacebook, FaReact, FaNodeJs} from "react-icons/fa";
 import { SiMongodb,SiExpress } from "react-icons/si";
+import { FaGithub } from "react-icons/fa";
 import { profile} from '../assets/index';
 
 export default function Home() {
@@ -19,14 +20,18 @@ export default function Home() {
         <div>
         <h2 className='text-white text-base uppercase font-titleFont mb-2'>Find Me In</h2>
         <div className='flex gap-4'>
+
             <div className='bannerIcon'>
-                <FaFacebook/>
+                <a href='https://github.com/NipunaSudesh'>
+                <FaGithub/></a>
             </div>
             <div className='bannerIcon'>
-                <FaInstagram/>
+                <a href='https://www.linkedin.com/in/nipuna-sudesh-27a1a8253/?lipi=urn%3Ali%3Apage%3Ad_flagship3_feed%3BlrJGSoIkQ%2B%2BTVScw3NZvKQ%3D%3D'>
+                <FaLinkedin/></a>
             </div>
             <div className='bannerIcon'>
-                <FaLinkedin/>
+                <a href='https://www.facebook.com/nipuna.sudesh/52'>
+                <FaFacebook/></a>
             </div>
         </div>
         </div>
