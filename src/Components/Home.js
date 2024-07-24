@@ -36,7 +36,7 @@ export default function Home() {
         </div>
         </div>
         <div>
-            <h2 className='mx-6 text-white text-base uppercase font-titleFont mb-2'>Best Skill On</h2>
+            <h2 className='mx-6 text-white text-base uppercase font-titleFont mb-2 m:mt-4'>Best Skill On</h2>
             <div className='flex gap-4'>
                 <span className='bannerIcon'>
                     <FaReact/>
@@ -59,7 +59,7 @@ export default function Home() {
     <div className='w-full lgl:w-1/2 flex justify-center items-center relative '>
         <img src={myProfile}
         alt='myphoto'
-        className='w-[300px] h-[400px] lgl:w-[500px] lgl:h-[680px] z-10' />
+        className='w-[300px] h-[400px] sm:mt-4 lgl:w-[500px] lgl:h-[680px] z-10 rounded-lg'  />
 
         <div className='absolute bottom-0 w-[300px] h-[380px] lgl:w-[500px] lgl:h-[680px] bg-gradient-to-r from-[#2d313a] to-[#0e1114]
         shadow-shadowOne flex justify-center items-center rounded-[8%]'></div>
