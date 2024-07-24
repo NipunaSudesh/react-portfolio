@@ -59,10 +59,9 @@ export default function Home() {
     <div className='w-full lgl:w-1/2 flex justify-center items-center relative '>
         <img src={myProfile}
         alt='myphoto'
-        className='w-[300px] h-[400px] sm:mt-4 lgl:w-[500px] lgl:h-[680px] z-10 rounded-lg'  />
+        className='w-[300px] h-[400px] sm:mt-4 lgl:w-[500px] lgl:h-[680px] z-10 rounded-2xl '   />
 
-        <div className='absolute bottom-0 w-[300px] h-[380px] lgl:w-[500px] lgl:h-[680px] bg-gradient-to-r from-[#2d313a] to-[#0e1114]
-        shadow-shadowOne flex justify-center items-center rounded-[8%]'></div>
+
     </div>
 
   </section>
