@@ -3,7 +3,7 @@ import my from "./images/my.png";
 import profile from "./images/profile.png";
 import eCom from "./images/work-1.png";
 import contactImg from "./images/contactImg.jpg";
-import cv from "./images/NipunaSudeshCV.pdf";
+import cv from "./images/CV_NipunaSudesh.pdf";
 
 
 export{
