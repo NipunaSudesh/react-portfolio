@@ -2,7 +2,7 @@ import React from 'react'
 import {FaInstagram,FaLinkedin, FaFacebook, FaReact, FaNodeJs} from "react-icons/fa";
 import { SiMongodb,SiExpress } from "react-icons/si";
 import { FaGithub } from "react-icons/fa";
-import { profile} from '../assets/index';
+import { myProfile} from '../assets/index';
 
 export default function Home() {
   return (
@@ -57,7 +57,7 @@ export default function Home() {
 
 
     <div className='w-full lgl:w-1/2 flex justify-center items-center relative '>
-        <img src={profile}
+        <img src={myProfile}
         alt='myphoto'
         className='w-[300px] h-[400px] lgl:w-[500px] lgl:h-[680px] z-10' />
 
