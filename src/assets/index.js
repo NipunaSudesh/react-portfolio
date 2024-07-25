@@ -5,6 +5,9 @@ import eCom from "./images/work-1.png";
 import contactImg from "./images/contactImg.jpg";
 import cv from "./images/CV_NipunaSudesh.pdf";
 import myProfile from "./images/myProfile.jpg"
+import tt from "./images/tt.jpg"
+import user from "./images/user.jpg"
+import petShop from "./images/petShop.jpeg"
 
 
 export{
@@ -14,5 +17,8 @@ export{
     profile,
     contactImg,
     cv,
-    myProfile
+    myProfile,
+    tt,
+    user,
+    petShop
 };
