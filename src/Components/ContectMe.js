@@ -7,6 +7,19 @@ import { motion } from "framer-motion";
 
 export default function ContectMe() {
 
+  const iconVariants =(duration)=>({
+    initial:{y:-10},
+    animate:{
+        y:[10,-10],
+        transition:{
+            duration:duration,
+            ease:"linear",
+            repeat:Infinity,
+            repeatType:"reverse"
+        }
+    },
+});
+
   const [name,setName]=useState("");
   const [number,setNumber]=useState("");
   const [Email,setEmail]=useState("");
@@ -79,18 +92,30 @@ export default function ContectMe() {
             <div className='flex gap-4 w-full justify-center'>
             <div className='flex gap-4'>
 
-<div className='bannerIcon'>
+<motion.div
+variants={iconVariants(1.5)}
+initial="initial"
+animate="animate"
+className='bannerIcon'>
     <a href='https://github.com/NipunaSudesh'>
-    <FaGithub/></a>
-</div>
-<div className='bannerIcon'>
+    <FaGithub className='text-white'/></a>
+</motion.div>
+<motion.div
+variants={iconVariants(2)}
+initial="initial"
+animate="animate"
+className='bannerIcon'>
     <a href='https://www.linkedin.com/in/nipuna-sudesh-27a1a8253/?lipi=urn%3Ali%3Apage%3Ad_flagship3_feed%3BlrJGSoIkQ%2B%2BTVScw3NZvKQ%3D%3D'>
-    <FaLinkedin/></a>
-</div>
-<div className='bannerIcon'>
+    <FaLinkedin className='text-blue-400'/></a>
+</motion.div>
+<motion.div
+variants={iconVariants(2.5)}
+initial="initial"
+animate="animate"
+className='bannerIcon'>
     <a href='https://www.facebook.com/nipuna.sudesh/52'>
-    <FaFacebook/></a>
-</div>
+    <FaFacebook className='text-red-400'/></a>
+</motion.div>
 </div>  
             </div>  
             <div className='w-full mt-4 mb-3 flex items-center justify-center '>
