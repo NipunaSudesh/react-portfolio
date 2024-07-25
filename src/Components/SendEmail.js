@@ -95,6 +95,7 @@ export default function SendEmail() {
                 type='text'
                 onChange={(e) => setName(e.target.value)}
                 value={name}
+                name="name"
                 className={`${errorMsg === "Name is Required!" && "outline-designColor"} inputText`}
                 placeholder='Enter Your Name'
               />
@@ -105,6 +106,7 @@ export default function SendEmail() {
                 type='text'
                 onChange={(e) => setNumber(e.target.value)}
                 value={number}
+                name="number"
                 className={`${errorMsg === "Number is Required!" && "outline-designColor"} inputText`}
                 placeholder='Enter Phone Number'
               />
@@ -116,6 +118,7 @@ export default function SendEmail() {
               type='email'
               onChange={(e) => setEmail(e.target.value)}
               value={email}
+              name="email"
               className={`${(errorMsg === "Email is Required!" || errorMsg === "Email is not valid!") && "outline-designColor"} inputText`}
               placeholder='Enter Your Email'
             />
@@ -126,6 +129,7 @@ export default function SendEmail() {
               type='text'
               onChange={(e) => setSubject(e.target.value)}
               value={subject}
+              name="subject"
               className={`${errorMsg === "Subject is Required!" && "outline-designColor"} inputText`}
               placeholder='Enter Subject'
             />
@@ -137,6 +141,7 @@ export default function SendEmail() {
               rows="15"
               onChange={(e) => setMessage(e.target.value)}
               value={message}
+              name="message"
               className={`${errorMsg === "Message is Required!" && "outline-designColor"} inputText`}
               placeholder='Enter Your Message'
             ></textarea>
