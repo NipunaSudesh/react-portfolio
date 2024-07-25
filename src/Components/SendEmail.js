@@ -75,7 +75,7 @@ export default function SendEmail() {
         whileInView={{ opacity: 1, x: 0 }}
         initial={{ opacity: 0, x: 100 }}
         transition={{ duration: 0.5 }}
-        className='w-full lgl:w-[60%] p-4 lgl:p-8 bg-dark h-full flex flex-col gap-5 justify-betweeen rounded-[5%] bg-gradient-to-r from-[#484c56] to-[#23272b] shadow-shadowOne'
+        className='w-full  p-4 lgl:p-8 bg-dark h-full flex flex-col gap-5 justify-betweeen rounded-[5%] bg-gradient-to-r from-[#484c56] to-[#23272b] shadow-shadowOne'
       >
         <form ref={form} className='w-[95%] mx-2 flex flex-col gap-2 py-2' onSubmit={HandleSend}>
           {errorMsg && (
@@ -95,7 +95,7 @@ export default function SendEmail() {
                 type='text'
                 onChange={(e) => setName(e.target.value)}
                 value={name}
-                name="name"
+                name="from_name"
                 className={`${errorMsg === "Name is Required!" && "outline-designColor"} inputText`}
                 placeholder='Enter Your Name'
               />
