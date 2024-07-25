@@ -2,6 +2,8 @@ import React, { useState } from 'react'
 import {contactImg,cv} from "../assets/index";
 import {FaInstagram,FaLinkedin, FaFacebook} from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
+import { motion } from "framer-motion";
+
 
 export default function ContectMe() {
 
@@ -47,13 +49,21 @@ export default function ContectMe() {
 
   return (
     <section id="ContectMe" className='w-full h-auto pt-10 pb-10 border-b-[2px] border-b-black gap-4'>
-              <div className='w-full'>
+              <div 
+               
+              className='w-full'>
       <h1 className=' flex justify-center items-center mt-5 text-6xl font-bold text-white'>Contect With Me</h1>
       </div>
 
       <div className='w-full pt-10 lgl:flex-rows flex gap-4'>
-        <div className='w-full flex-col lgl:flex-row xl:gap-4 lgl:gap-10 flex justify-betweeen gap-8'>
-          <div className='w-full bg-gradient-to-r from-[#1e2024] to-[#414951] p-4 lgl:p-8 lgl:w-[35%] h-full rounded-[5%]'>
+        <div
+       
+        className='w-full flex-col lgl:flex-row xl:gap-4 lgl:gap-10 flex justify-betweeen gap-8'>
+          <motion.div
+           whileInView={{opacity:1,x:0}}
+           initial={{opacity:0,x:-100}}
+           transition={{duration:0.5}}
+          className='w-full bg-gradient-to-r from-[#1e2024] to-[#414951] p-4 lgl:p-8 lgl:w-[35%] h-full rounded-[5%]'>
             <img src={contactImg}
              className='rounded-[5%] w-full h-64 object-cover shadow-shadowOne'
               alt='contactImg'></img>
@@ -88,9 +98,13 @@ export default function ContectMe() {
          transition-all cursor-pointer duration-300 text-white">Download CV</a>
               </div>    
         </div>
-          </div>
+          </motion.div>
 
-      <div className='w-full lgl:w-[60%] p-4 lgl:p-8 bg-dark h-full flex flex-col gap-5 justify-betweeen rounded-[5%] bg-gradient-to-r from-[#484c56] to-[#23272b] shadow-shadowOne'>
+      <motion.div 
+      whileInView={{opacity:1,x:0}}
+      initial={{opacity:0,x:100}}
+      transition={{duration:0.5}}
+      className='w-full lgl:w-[60%] p-4 lgl:p-8 bg-dark h-full flex flex-col gap-5 justify-betweeen rounded-[5%] bg-gradient-to-r from-[#484c56] to-[#23272b] shadow-shadowOne'>
         
         <form className='w-[95%] mx-2 flex flex-col gap-2 py-2'>
       {
@@ -168,7 +182,7 @@ export default function ContectMe() {
          transition-all cursor-pointer duration-300 text-white mx-4">Send Massage</button>
             </div>
         </form>
-      </div>
+      </motion.div>
       </div>
       </div>
     </section>
