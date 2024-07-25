@@ -14,7 +14,7 @@ export default function NavBar() {
     const handleScroll = () => {
       const homeSection = document.getElementById('Home');
       const aboutSection = document.getElementById('AboutUs');
-      const servicesSection = document.getElementById('MyServices');
+      const TechnolohiesSection = document.getElementById('Technolohies');
       const projectsSection = document.getElementById('Projects');
       const contactSection = document.getElementById('ContectMe');
 
@@ -26,15 +26,15 @@ export default function NavBar() {
       ) {
         setActiveLink('Home');
       } else if (
-        scrollPosition < servicesSection.offsetTop &&
+        scrollPosition < TechnolohiesSection.offsetTop &&
         scrollPosition >= aboutSection.offsetTop
       ) {
         setActiveLink('AboutUs');
       } else if (
         scrollPosition < projectsSection.offsetTop &&
-        scrollPosition >= servicesSection.offsetTop
+        scrollPosition >= TechnolohiesSection.offsetTop
       ) {
-        setActiveLink('MyServices');
+        setActiveLink('Technolohies');
       } else if (
         scrollPosition < contactSection.offsetTop &&
         scrollPosition >= projectsSection.offsetTop
@@ -58,7 +58,7 @@ export default function NavBar() {
         <ul className='items-center gap-10 hidden mdl:inline-flex'>
           <li>
             <a
-              className={`text-base text-xl tracking-wide cursor-pointer hover:text-designColor duration-300 ${activeLink === 'Home' ? 'text-red-500 underline' : 'text-blue-500'}`}
+              className={`text-xl tracking-wide cursor-pointer hover:text-designColor duration-300 ${activeLink === 'Home' ? 'text-red-500 underline' : 'text-blue-500'}`}
               href="#Home"
               onClick={() => setActiveLink('Home')}
             >
@@ -68,7 +68,7 @@ export default function NavBar() {
 
           <li>
             <a
-              className={`text-base text-xl tracking-wide cursor-pointer hover:text-designColor duration-300 ${activeLink === 'AboutUs' ? 'text-red-500 underline' : 'text-blue-500'}`}
+              className={`text-xl tracking-wide cursor-pointer hover:text-designColor duration-300 ${activeLink === 'AboutUs' ? 'text-red-500 underline' : 'text-blue-500'}`}
               href="#AboutUs"
               onClick={() => setActiveLink('AboutUs')}
             >
@@ -78,17 +78,17 @@ export default function NavBar() {
 
           <li>
             <a
-              className={`text-base text-xl tracking-wide cursor-pointer hover:text-designColor duration-300 ${activeLink === 'MyServices' ? 'text-red-500 underline' : 'text-blue-500'}`}
-              href="#MyServices"
-              onClick={() => setActiveLink('MyServices')}
+              className={`text-xl tracking-wide cursor-pointer hover:text-designColor duration-300 ${activeLink === 'Technolohies' ? 'text-red-500 underline' : 'text-blue-500'}`}
+              href="#Technolohies"
+              onClick={() => setActiveLink('Technolohies')}
             >
-              My Services
+              Technologies
             </a>
           </li>
 
           <li>
             <a
-              className={`text-base text-xl tracking-wide cursor-pointer hover:text-designColor duration-300 ${activeLink === 'Projects' ? 'text-red-500 underline' : 'text-blue-500'}`}
+              className={`text-xl tracking-wide cursor-pointer hover:text-designColor duration-300 ${activeLink === 'Projects' ? 'text-red-500 underline' : 'text-blue-500'}`}
               href="#Projects"
               onClick={() => setActiveLink('Projects')}
             >
@@ -98,7 +98,7 @@ export default function NavBar() {
 
           <li>
             <a
-              className={`text-base text-xl tracking-wide cursor-pointer hover:text-designColor duration-300 ${activeLink === 'ContectMe' ? 'text-red-500 underline' : 'text-blue-500'}`}
+              className={`text-xl tracking-wide cursor-pointer hover:text-designColor duration-300 ${activeLink === 'ContectMe' ? 'text-red-500 underline' : 'text-blue-500'}`}
               href="#ContectMe"
               onClick={() => setActiveLink('ContectMe')}
             >
@@ -124,7 +124,7 @@ export default function NavBar() {
               <ul className='items-center gap-10 flex flex-col mdl:hidden'>
           <li>
             <a
-              className={`text-base text-xl tracking-wide cursor-pointer hover:text-designColor duration-300 ${activeLink === 'Home' ? 'text-red-500 underline' : 'text-blue-500'}`}
+              className={`text-xl tracking-wide cursor-pointer hover:text-designColor duration-300 ${activeLink === 'Home' ? 'text-red-500 underline' : 'text-blue-500'}`}
               href="#Home"
               onClick={() => setActiveLink('Home')}
             >
@@ -134,7 +134,7 @@ export default function NavBar() {
 
           <li>
             <a
-              className={`text-base text-xl tracking-wide cursor-pointer hover:text-designColor duration-300 ${activeLink === 'AboutUs' ? 'text-red-500 underline' : 'text-blue-500'}`}
+              className={`text-xl tracking-wide cursor-pointer hover:text-designColor duration-300 ${activeLink === 'AboutUs' ? 'text-red-500 underline' : 'text-blue-500'}`}
               href="#AboutUs"
               onClick={() => setActiveLink('AboutUs')}
             >
@@ -144,17 +144,17 @@ export default function NavBar() {
 
           <li>
             <a
-              className={`text-base text-xl tracking-wide cursor-pointer hover:text-designColor duration-300 ${activeLink === 'MyServices' ? 'text-red-500 underline' : 'text-blue-500'}`}
-              href="#MyServices"
-              onClick={() => setActiveLink('MyServices')}
+              className={`text-xl tracking-wide cursor-pointer hover:text-designColor duration-300 ${activeLink === 'Technolohies' ? 'text-red-500 underline' : 'text-blue-500'}`}
+              href="#Technolohies"
+              onClick={() => setActiveLink('Technolohies')}
             >
-              My Services
+              Technologies
             </a>
           </li>
 
           <li>
             <a
-              className={`text-base text-xl tracking-wide cursor-pointer hover:text-designColor duration-300 ${activeLink === 'Projects' ? 'text-red-500 underline' : 'text-blue-500'}`}
+              className={`text-xl tracking-wide cursor-pointer hover:text-designColor duration-300 ${activeLink === 'Projects' ? 'text-red-500 underline' : 'text-blue-500'}`}
               href="#Projects"
               onClick={() => setActiveLink('Projects')}
             >
@@ -164,7 +164,7 @@ export default function NavBar() {
 
           <li>
             <a
-              className={`text-base text-xl tracking-wide cursor-pointer hover:text-designColor duration-300 ${activeLink === 'ContectMe' ? 'text-red-500 underline' : 'text-blue-500'}`}
+              className={`text-xl tracking-wide cursor-pointer hover:text-designColor duration-300 ${activeLink === 'ContectMe' ? 'text-red-500 underline' : 'text-blue-500'}`}
               href="#ContectMe"
               onClick={() => setActiveLink('ContectMe')}
             >
