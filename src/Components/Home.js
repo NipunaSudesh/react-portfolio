@@ -7,6 +7,19 @@ import { motion } from "framer-motion"
 
 export default function Home() {
 
+    const iconVariants =(duration)=>({
+        initial:{y:-10},
+        animate:{
+            y:[10,-10],
+            transition:{
+                duration:duration,
+                ease:"linear",
+                repeat:Infinity,
+                repeatType:"reverse"
+            }
+        },
+    });
+
 const container =(delay)=>({
     hidden:{x:-100,opacity:0},
     visible:{
@@ -40,41 +53,78 @@ const container =(delay)=>({
             className='text-white'>A software undergraduate student passionate about building innovative software solutions. Currently honing my skills in MERN Stack, with a keen interest in web development and Data science. You can find some of my projects here on GitHub, and I'm always open to collaboration and learning opportunities. </motion.p>
         </div >
         <div className='flex justify-between flex-col xl:flex-row gap-6 lgl:gap-0'>
-        <div>
+        <motion.div
+              whileInView={{opacity:1,x:0}}
+              initial={{opacity:0,x:-100}}
+              transition={{duration:1}}
+        >
         <h2 className='text-white text-base uppercase font-titleFont mb-2'>Find Me In</h2>
         <div className='flex gap-4'>
 
-            <div className='bannerIcon'>
+            <motion.div
+                    variants={iconVariants(1.5)}
+                    initial="initial"
+                    animate="animate"
+            className='bannerIcon'>
                 <a href='https://github.com/NipunaSudesh'>
-                <FaGithub/></a>
-            </div>
-            <div className='bannerIcon'>
+                <FaGithub className='text-white'/></a>
+            </motion.div>
+            <motion.div
+                    variants={iconVariants(2)}
+                    initial="initial"
+                    animate="animate"
+            className='bannerIcon'>
                 <a href='https://www.linkedin.com/in/nipuna-sudesh-27a1a8253/?lipi=urn%3Ali%3Apage%3Ad_flagship3_feed%3BlrJGSoIkQ%2B%2BTVScw3NZvKQ%3D%3D'>
-                <FaLinkedin/></a>
-            </div>
-            <div className='bannerIcon'>
+                <FaLinkedin className=' text-blue-500'/></a>
+            </motion.div>
+            <motion.div
+            
+            variants={iconVariants(2.5)}
+            initial="initial"
+            animate="animate" className='bannerIcon'>
                 <a href='https://www.facebook.com/nipuna.sudesh/52'>
-                <FaFacebook/></a>
-            </div>
+                <FaFacebook className='text-red-400'/></a>
+            </motion.div>
         </div>
-        </div>
-        <div>
+        </motion.div>
+        <motion.div
+              whileInView={{opacity:1,x:0}}
+              initial={{opacity:0,x:100}}
+              transition={{duration:1}}
+        >
             <h2 className='mx-6 text-white text-base uppercase font-titleFont mb-2 m:mt-4'>Best Skill On</h2>
             <div className='flex gap-4'>
-                <span className='bannerIcon'>
+                <motion.span
+                
+                variants={iconVariants(1.5)}
+                initial="initial"
+                animate="animate"
+                className='bannerIcon text-blue-500'>
                     <FaReact/>
-                </span>    
-                <span className='bannerIcon'>
+                </motion.span>    
+                <motion.span
+                        variants={iconVariants(2)}
+                        initial="initial"
+                        animate="animate"
+                className='bannerIcon text-yellow-400'>
                     <FaNodeJs/>
-                </span>    
-                <span className='bannerIcon'>
+                </motion.span>    
+                <motion.span
+                        variants={iconVariants(2.5)}
+                        initial="initial"
+                        animate="animate"
+                className='bannerIcon'>
                     <SiExpress />
-                </span>
-                <span className='bannerIcon'>
+                </motion.span>
+                <motion.span
+                        variants={iconVariants(3)}
+                        initial="initial"
+                        animate="animate"
+                className='bannerIcon text-green-400'>
                     <SiMongodb/>
-                </span>    
+                </motion.span>    
             </div>      
-        </div>
+        </motion.div>
         </div>
     </div>
 
