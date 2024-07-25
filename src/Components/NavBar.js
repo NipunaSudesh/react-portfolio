@@ -82,7 +82,7 @@ export default function NavBar() {
               href="#Technolohies"
               onClick={() => setActiveLink('Technolohies')}
             >
-              Technolohies
+              Technologies
             </a>
           </li>
 
@@ -148,7 +148,7 @@ export default function NavBar() {
               href="#Technolohies"
               onClick={() => setActiveLink('Technolohies')}
             >
-              Technolohies
+              Technologies
             </a>
           </li>
 
