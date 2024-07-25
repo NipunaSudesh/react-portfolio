@@ -6,7 +6,7 @@ import { myProfile} from '../assets/index';
 
 export default function Home() {
   return (
-  <section id="Home" className='w-full flex-col lgl:flex-row xl:gap-0 lgl:gap-4 pt-10 b-20 pb-24 flex border-b-[2px] border-b-black'>
+  <section id="Home" className='w-full flex-col lgl:flex-row xl:gap-0 lgl:gap-4 pt-10 b-20 pb-24 flex border-b-[2px] border-b-black '>
     <div className='w-full lgl:w-1/2 flex flex-col gap-16'>
         <div className='flex flex-col gap-3'>
             <h4 className=' font-normal mt-4'>Welcome To My Portfolio</h4>
