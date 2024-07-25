@@ -3,10 +3,10 @@ import { FaGithub, FaGlobe } from "react-icons/fa";
 
 export default function ProjectCard({ title, des, src, git }) {
   return (
-    <div className='w-full px-12 h-auto py-10 shadow-shadowOne flex flex-col
+    <div className='h-auto px-12 py-10 shadow-shadowOne flex flex-col
     bg-gradient-to-r from-bodyColor to-[#330080] group hover:bg-gradient-to-b
     hover:from-gray-900 hover:to-gray-900 transition-colors duration-1000 rounded-[5%]'>
-      <div className='w-full h-[80%] overflow-hidden rounded-lg'>
+      <div className='w-full h-[70%] overflow-hidden rounded-lg'>
         <img className='w-full h-60 object-cover group-hover:scale-110 duration-300' 
              src={src} alt='Project' />
       </div>
