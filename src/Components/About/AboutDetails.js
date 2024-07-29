@@ -2,11 +2,26 @@ import React from 'react'
 import {motion} from 'framer-motion';
 
 export default function AboutDetails(props) {
+  const container =(delay)=>({
+    hidden:{x:-100,opacity:0},
+    visible:{
+        x:0,
+        opacity:1,
+        transition:{durarion:0.5,delay:delay},
+    },
+}); 
+
+
+
   return (
-    <div className=' flex flex-col w-auto justify-center items-center bg-gray-200 rounded-lg'>
+    <motion.div 
+    variants={container(0)}
+    initial="hidden"
+    animate="visible"
+    className=' flex flex-col w-auto justify-center items-center bg-gray-200 rounded-lg'>
         <h2 className='text-xl font-bold'>{props.title}</h2>
-        <p className='text-gray-700 text-base p-1'> {props.des}</p>
-    </div>
+        <p className='text-gray-700 text-base p-1 sm:p-2'> {props.des}</p>
+    </motion.div>
 
   )
 }
