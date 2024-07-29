@@ -92,7 +92,7 @@ const container =(delay)=>({
               initial={{opacity:0,x:100}}
               transition={{duration:1}}
         >
-            <h2 className='mx-6 text-white text-base uppercase font-titleFont mb-2 m:mt-4'>Best Skill On</h2>
+            <h2 className='mx-6 text-white text-base uppercase font-titleFont mb-2 m:mt-4 sm:mb-4'>Best Skill On</h2>
             <div className='flex gap-4'>
                 <motion.span
                 
