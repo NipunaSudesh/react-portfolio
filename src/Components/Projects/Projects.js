@@ -1,7 +1,8 @@
 import React from 'react'
 import ProjectCard from './ProjectCard'
-import { eCom, tt, user, petShop } from '../../assets/index'
-import { motion } from 'framer-motion'
+import { eCom, tt, user, petShop ,mobile} from '../../assets/index'
+import { motion } from 'framer-motion';
+
 
 export default function Projects() {
   return (
@@ -21,7 +22,7 @@ export default function Projects() {
             JWT authentication, CRUD operations for products, Implemented a
             responsive UI for seamless usability and applied data security protocols to
             ensure a user-friendly and reliable application"
-            src={eCom}
+            src={mobile}
             git='https://github.com/NipunaSudesh/Mobile-Store-Management-System'
           />
         </motion.div>
@@ -47,11 +48,10 @@ export default function Projects() {
         >
           <ProjectCard 
             title="Table Tennis Equipment Store"
-            des=" full-featured e-commerce web application utilizing HTML, CSS,
-            JavaScript, PHP, and MySQL. Designed to enable seamless browsing,
-            purchasing, and product management, the application integrates PHP for
-            server-side logic, MySQL for database management, and HTML, CSS, and
-            JavaScript for building the user interface."
+            des=" Developed an e-commerce platform for a table tennis equipment store
+with a user-friendly interface for browsing and purchasing products, and
+efficient order management. The frontend was built using HTML, CSS,
+and JavaScript, while PHP and MySQL powered the backend"
             src={tt}
             git='https://github.com/NipunaSudesh/table-tennis-equipment-store'
           />

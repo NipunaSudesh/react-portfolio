@@ -8,6 +8,7 @@ import myProfile from "./images/myProfile.jpg"
 import tt from "./images/tt.jpg"
 import user from "./images/user.jpg"
 import petShop from "./images/petShop.jpeg"
+import mobile from "./images/mobile.png"
 
 
 export{
@@ -20,5 +21,6 @@ export{
     myProfile,
     tt,
     user,
-    petShop
+    petShop,
+    mobile
 };
