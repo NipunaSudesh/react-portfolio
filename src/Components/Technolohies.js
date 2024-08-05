@@ -12,7 +12,9 @@ import { BiLogoPostgresql } from "react-icons/bi";
 import { AiOutlineJavaScript } from "react-icons/ai";
 import { FaHtml5 } from "react-icons/fa";
 import { FaCss3 } from "react-icons/fa";
-import {  motion } from "framer-motion"
+import {  motion } from "framer-motion";
+import { BiLogoSpringBoot } from "react-icons/bi";
+import { SiPostman } from "react-icons/si";
 
 
 export default function Technolohies() {
@@ -124,11 +126,25 @@ export default function Technolohies() {
           <SiMysql className='text-6xl text-white'/>
       </motion.div>
       <motion.div
-        variants={iconVariants(3)}
+        variants={iconVariants(2)}
         initial="initial"
         animate="animate"
         className='border-neutral-800 p-4 rounded-2xl border-4'>
           <BiLogoPostgresql className='text-6xl text-cyan-300'/>
+      </motion.div>
+      <motion.div
+        variants={iconVariants(3.5)}
+        initial="initial"
+        animate="animate"
+        className='border-neutral-800 p-4 rounded-2xl border-4'>
+          <BiLogoSpringBoot className='text-6xl text-green-500'/>
+      </motion.div>
+      <motion.div
+        variants={iconVariants(4)}
+        initial="initial"
+        animate="animate"
+        className='border-neutral-800 p-4 rounded-2xl border-4'>
+          <SiPostman className='text-6xl text-orange-500'/>
       </motion.div>
     </motion.div>
     </div>
