@@ -30,7 +30,7 @@ export default function ContectMe() {
               <div 
                
               className='w-full'>
-      <h1 className=' flex justify-center items-center mt-5 text-6xl font-bold text-white'>Contect With Me</h1>
+      <h1 className=' flex justify-center items-center mt-5 text-6xl font-bold text-white'>contact With Me</h1>
       </div>
 
       <div className='w-full pt-10 lgl:flex-rows flex gap-4'>
@@ -47,7 +47,7 @@ export default function ContectMe() {
               alt='contactImg'></img>
               <div className='flex flex-col gap-1'>
                 <h3 className='text-3xl font-bold text-white mt-2'>Nipuna Sudesh</h3>
-                <p className='text-lg font-normal text-gray-400'>MERN Stack Developer</p>
+                <p className='text-lg font-normal text-gray-400'> Software Engineer</p>
                 <p className='text-base tracking-wide text-gray-400 '>Software undergraduate passionate about innovative solutions. Currently honing skills in MERN Stack, web development, and data science</p>
                 <p className='text-base text-gray-400 flex items-center gap-2'>Phone : <span className='text-lightText hover:underline duration-300'>+94 766521915</span></p>
                 <p className=' text-base text-gray-400 flex items-center gap-2'>Email : <span className='text-lightText hover:underline'>nipunasudesh2000@gmail.com</span></p>
