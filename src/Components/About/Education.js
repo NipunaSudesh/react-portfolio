@@ -8,10 +8,10 @@ export default function Education() {
     <motion.div initial={{opacity:0}} animate={{opacity:1 , transition:{duration:.5}}} className="container mx-auto  ">
       <div className="w-full flex flex-col gap-2 lgl:grid lgl:grid-cols-2 lgl:gap-2">
         <AboutDetails title="2006-2016"
-        des="Ke/Mw/Mayurapadha National School"
+        des="Kg/Mw/Mayurapadha National School"
         />
         <AboutDetails title="2017-2020"
-        des="Ke/St mary's collage"
+        des="Kg/St mary's collage"
         />
         <AboutDetails title="2021-Current"
         des="undergraduate student at university of kelaniya"
