@@ -9,7 +9,7 @@ export default function Skill() {
       <AboutDetails title="UI/UX" des="Designing web/App interface"/>
       <AboutDetails title="web Development" des="Web App development"/>
       <AboutDetails title="App Development" des="App Development"/>
-      <AboutDetails title="UI/UX" des="Designing web/App interface"/>
+      {/* <AboutDetails title="UI/UX" des="Designing web/App interface"/> */}
         </div>
       </motion.div>
   )
