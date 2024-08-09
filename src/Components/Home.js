@@ -45,12 +45,12 @@ const container =(delay)=>({
                 variants={container(0.5)}
                 initial="hidden"
                 animate="visible"
-            >A Software Engineer.</motion.h2>
+            >Software Engineering (UG)</motion.h2>
             <motion.p
                 variants={container(1)}
                 initial="hidden"
                 animate="visible"
-            className='text-white'>A software undergraduate student passionate about building innovative software solutions. Currently honing my skills in MERN Stack, with a keen interest in web development and Data science. You can find some of my projects here on GitHub, and I'm always open to collaboration and learning opportunities. </motion.p>
+            className='text-white'> A 3rd-year Software Engineering undergraduate at the University of Kelaniya, passionate about building innovative software solutions. I am currently honing my skills in the MERN stack, with a keen interest in web development and data science. You can explore some of my projects on GitHub, and I am always open to collaboration and learning opportunities. </motion.p>
         </div >
         <div className='flex justify-between flex-col xl:flex-row gap-6 lgl:gap-0'>
         <motion.div
@@ -135,7 +135,7 @@ const container =(delay)=>({
             animate={{x:0,opacity:1}}
             transition={{duration:1,delay:1.2}}
         alt='myphoto'
-        className='w-[300px] h-[400px] sm:mt-4 lgl:w-[500px] lgl:h-[680px] z-10 rounded-2xl '   />
+        className='w-[200px] h-[300px] sm:mt-4 lgl:w-[400px] lgl:h-[580px] z-10 rounded-2xl '   />
 
 
     </div>
