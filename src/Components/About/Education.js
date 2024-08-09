@@ -39,7 +39,7 @@ in Software Engineering (UG)"
         <p className='text-gray-700 text-base'>2022 - present </p>
     </motion.div>
     <motion.div 
-    variants={container(0.5)}
+    variants={container(0.25)}
     initial="hidden"
     animate="visible"
     className=' flex flex-col w-auto justify-center items-center bg-gray-200 rounded-lg'>
