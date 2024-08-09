@@ -135,7 +135,7 @@ const container =(delay)=>({
             animate={{x:0,opacity:1}}
             transition={{duration:1,delay:1.2}}
         alt='myphoto'
-        className='w-[300px] h-[400px] sm:mt-4 lgl:w-[500px] lgl:h-[680px] z-10 rounded-2xl '   />
+        className='w-[200px] h-[300px] sm:mt-4 lgl:w-[400px] lgl:h-[580px] z-10 rounded-2xl '   />
 
 
     </div>
