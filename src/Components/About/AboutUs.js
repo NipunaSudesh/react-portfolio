@@ -30,7 +30,7 @@ export default function AboutUs() {
        transition={{duration:0.5}}
       className='w-full lgl:w-2/3 flex flex-col gap-16 bg-dark p-10 rounded-[5%] bg-gradient-to-r from-[#484c56] to-[#23272b] shadow-shadowOne'>
         <div className='flex flex-col gap-7'>
-          <h1 className='flex justify-center items-center mt-10 text-6xl font-bold text-white'>About Us</h1>
+          <h1 className='flex justify-center items-center mt-10 text-6xl font-bold text-white'>About </h1>
           <p className='text-l tracking-wide mt-3 hover:text-gray-100 duration-300'>I'm Nipuna Sudesh, a passionate and driven Software Engineering undergraduate student at the University of Kelaniya. I welcome you to explore my portfolio, where I showcase my journey, skills, and projects in the world of software development.</p>
         </div>
         <div className='flex flex-col gap-4'>
