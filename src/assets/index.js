@@ -9,6 +9,8 @@ import tt from "./images/tt.jpg"
 import user from "./images/user.jpg"
 import petShop from "./images/petShop.jpeg"
 import mobile from "./images/mobile.png"
+import pickMatch from "./images/pickMatch.png"
+
 
 
 export{
@@ -22,5 +24,6 @@ export{
     tt,
     user,
     petShop,
-    mobile
+    mobile,
+    pickMatch
 };
