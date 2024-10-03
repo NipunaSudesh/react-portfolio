@@ -10,6 +10,7 @@ import user from "./images/user.jpg"
 import petShop from "./images/petShop.jpeg"
 import mobile from "./images/mobile.png"
 import pickMatch from "./images/pickMatch.png"
+import weather from "./images/weather.png"
 
 
 
@@ -25,5 +26,6 @@ export{
     user,
     petShop,
     mobile,
-    pickMatch
+    pickMatch,
+    weather
 };

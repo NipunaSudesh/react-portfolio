@@ -1,6 +1,6 @@
 import React from 'react'
 import ProjectCard from './ProjectCard'
-import { pickMatch, tt, user, petShop, mobile } from '../../assets/index'
+import { pickMatch, tt, user, petShop, mobile,weather } from '../../assets/index'
 import { motion } from 'framer-motion';
 
 export default function Projects() {
@@ -17,10 +17,28 @@ export default function Projects() {
         >
           <ProjectCard 
             title="Mobile Store Management System"
-            des="E-commerce web application utilizing JWT authentication and comprehensive CRUD operations for product management. Features a responsive UI for seamless usability and incorporates data security protocols to ensure a user-friendly and reliable experience."
+            des="Developed a full-stack e-commerce app using the MERN
+stack, incorporating JWT authentication, CRUD operations,
+and a responsive admin panel for managing products and
+users."
             src={mobile}
             git='https://github.com/NipunaSudesh/Mobile-Store-Management-System'
             tech={['React', 'Express', 'Node.js', 'MongoDB']}
+
+            
+          />
+        </motion.div>
+        <motion.div
+          initial={{ opacity: 0, y: 50 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1, ease: "easeOut" }}
+        >
+          <ProjectCard 
+            title="Weather App "
+            des="Built a weather app using React, Vite, and Tailwind CSS, leveraging the OpenWeather API for real-time weather data and 4-day forecasts. Deployed on Vercel"
+            src={weather}
+            git='https://github.com/NipunaSudesh/Weather-App'
+            tech={['React', 'Tailwind CSS']}
 
             
           />
@@ -60,7 +78,9 @@ export default function Projects() {
         >
           <ProjectCard 
             title="User Management System"
-            des="Developed a full-stack web application featuring a comprehensive CRUD operation system Achieved efficient data management and scalability using PostgreSQL for reliable handling of user content."
+            des="Full-stack web application with ReactJS, Spring Boot, and
+PostgreSQL. Implemented CRUD operations for efficient user
+content management"
             src={user}
             git='https://github.com/NipunaSudesh/UserManagementSystem-backend'
 
