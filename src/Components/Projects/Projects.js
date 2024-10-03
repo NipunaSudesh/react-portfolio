@@ -21,8 +21,11 @@ export default function Projects() {
 stack, incorporating JWT authentication, CRUD operations,
 and a responsive admin panel for managing products and
 users."
+
             src={mobile}
+          
             git='https://github.com/NipunaSudesh/Mobile-Store-Management-System'
+          
             tech={['React', 'Express', 'Node.js', 'MongoDB']}
 
             
@@ -34,10 +37,11 @@ users."
           transition={{ duration: 1, ease: "easeOut" }}
         >
           <ProjectCard 
-            title="Weather App "
+            title="Weather App"
             des="Built a weather app using React, Vite, and Tailwind CSS, leveraging the OpenWeather API for real-time weather data and 4-day forecasts. Deployed on Vercel"
             src={weather}
             git='https://github.com/NipunaSudesh/Weather-App'
+            vercel={'https://weather-app-kohl-two-41.vercel.app/'}
             tech={['React', 'Tailwind CSS']}
 
             
