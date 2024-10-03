@@ -8,8 +8,8 @@ export default function ProjectCard({ title, des, src, git,vercel, tech = [] }) 
     bg-gradient-to-r from-bodyColor to-[#330080] group hover:bg-gradient-to-b
     hover:from-gray-900 hover:to-gray-900 transition-colors duration-1000 rounded-[5%]'>
       <div className='w-full   overflow-hidden rounded-lg'>
-        <img className='w-full h-60 object-cover group-hover:scale-110 duration-300' 
-             src={src} alt='Project' class />
+        <img className='lgl:h-50 xl:h-55 w-full h-60 object-cover group-hover:scale-110 duration-300' 
+             src={src} alt='Project' />
       </div>
       <div className='w-full mt-5 flex gap-6'>
         <div className='flex items-center justify-between'>
