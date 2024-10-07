@@ -42,7 +42,7 @@ users."
             src={weather}
             git='https://github.com/NipunaSudesh/Weather-App'
             vercel={'https://weather-app-kohl-two-41.vercel.app/'}
-            tech={['React', 'Tailwind CSS']}
+            tech={['React', 'Tailwind CSS','OpenWeather API']}
 
             
           />
