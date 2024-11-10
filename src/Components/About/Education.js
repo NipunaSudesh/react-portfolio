@@ -33,8 +33,7 @@ in Software Engineering (UG)"
     initial="hidden"
     animate="visible"
     className=' flex flex-col w-auto justify-center items-center bg-gray-200 rounded-lg'>
-        <h1 className='text-xl font-bold text-center '>Bachelor of Science (Hons)
-        in Software Engineering (UG)</h1>
+        <h1 className='text-xl font-bold text-center '>BSc (Hons) Software Engineering (UG)</h1>
         <p className='text-gray-700 text-base'>University of Kelaniya </p>
         <p className='text-gray-700 text-base'>2022 - present </p>
     </motion.div>
@@ -45,7 +44,7 @@ in Software Engineering (UG)"
     className=' flex flex-col w-auto justify-center items-center bg-gray-200 rounded-lg'>
         <h1 className='text-xl font-bold text-center '>G.C.E. A/L (2020) - 2484193</h1>
         <p className='text-gray-700 text-base'>Combined Mathematics - A</p>
-        <p className='text-gray-700 text-base'>Chemistry - A </p>
+        <p className='text-gray-700 text-base'>Chemistry - B </p>
         <p className='text-gray-700 text-base'>Physics - B</p>
         <p className='text-gray-700 text-base'>Z-Score - 1.5348</p>
     </motion.div>
