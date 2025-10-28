@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { my } from '../../assets';
 import AboutDetails from './AboutDetails';
 import Education from './Education';
-import Experience from './Experience';
+import Experience from './SoftSkills';
 import Skill from './Skill';
 import { motion } from "framer-motion"
 
@@ -47,7 +47,7 @@ export default function AboutUs() {
 
             <li onClick={() => { setEducationData(false); setSkillsData(false); setExperienceData(true); setActiveLink('experience'); }}
               className={`cursor-pointer hover:text-designColor ${activeLink === 'experience' ? 'underline text-designColor' : ''}`}>
-              Experience
+              Soft Skills
             </li>
           </ul>
         </div>
