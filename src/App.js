@@ -4,6 +4,7 @@ import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
 import AboutUs from "./Components/About/AboutUs";
 import Projects from "./Components/Projects/Projects";
 import MyServices from "./Components/Services/MyServices";
+import Intern from "./Components/Experience/internExperience";
 import ContectMe from "./Components/ContectMe";
 import Footer from "./Components/Footer";
 import  Technolohies  from "./Components/Technolohies";
@@ -18,6 +19,7 @@ function App() {
         <NavBar/> 
         <Home/>
         <AboutUs />
+        <Intern />
         <Technolohies />
         <Projects/>
         <ContectMe />

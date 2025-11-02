@@ -50,7 +50,12 @@ const container =(delay)=>({
                 variants={container(1)}
                 initial="hidden"
                 animate="visible"
-            className='text-white'> A 3rd-year Software Engineering undergraduate at the University of Kelaniya, passionate about building innovative software solutions. I am currently honing my skills in the MERN stack, with a keen interest in web development and data science. You can explore some of my projects on GitHub, and I am always open to collaboration and learning opportunities. </motion.p>
+            className='text-white'> Final-year Software Engineering undergraduate at the University of Kelaniya, passionate about designing and maintaining scalable software solutions. Experienced as an Intern Software Engineer at Prime Technologies Global (Pvt) Ltd, where I contributed to developing, testing, and improving software applications. Skilled in the MERN stack, with interests in web development and data science. I value teamwork, innovation, and continuous learning. </motion.p>
+            {/* <motion.p
+                variants={container(1)}
+                initial="hidden"
+                animate="visible"
+            className='text-white'> A 3rd-year Software Engineering undergraduate at the University of Kelaniya, passionate about building innovative software solutions. I am currently honing my skills in the MERN stack, with a keen interest in web development and data science. You can explore some of my projects on GitHub, and I am always open to collaboration and learning opportunities. </motion.p> */}
         </div >
         <div className='flex justify-between flex-col xl:flex-row gap-6 lgl:gap-0'>
         <motion.div

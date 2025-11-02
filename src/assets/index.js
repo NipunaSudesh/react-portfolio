@@ -4,6 +4,7 @@ import profile from "./images/profile.png";
 import eCom from "./images/work-1.png";
 import contactImg from "./images/contactImg.jpg";
 import cv from "./images/CV-NipunaSudesh.pdf";
+import jobExperience from "./images/job-Experience.pdf";
 import myProfile from "./images/myProfile.jpg"
 import tt from "./images/tt.jpg"
 import user from "./images/user.jpg"
@@ -21,6 +22,7 @@ export{
     profile,
     contactImg,
     cv,
+    jobExperience,
     myProfile,
     tt,
     user,
