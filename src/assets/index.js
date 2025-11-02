@@ -12,6 +12,7 @@ import petShop from "./images/petShop.jpeg"
 import mobile from "./images/mobile.png"
 import pickMatch from "./images/pickMatch.png"
 import weather from "./images/weather.png"
+import primelogo from "./images/primelogo.svg"
 
 
 
@@ -29,5 +30,6 @@ export{
     petShop,
     mobile,
     pickMatch,
-    weather
+    weather,
+    primelogo
 };
