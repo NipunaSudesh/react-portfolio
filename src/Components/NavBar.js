@@ -235,7 +235,7 @@ export default function NavBar() {
             </a>
           </li>
         </ul>
-        <div className="flex gap-4 justify-center">
+        <div className="flex gap-4 items-center justify-center">
   <motion.span
     variants={iconVariants(1.5)}
     initial="initial"
