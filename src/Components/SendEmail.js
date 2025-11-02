@@ -41,7 +41,8 @@ export default function SendEmail() {
     e.preventDefault();
 
     emailjs
-      .sendForm('service_vsq3vy4', 'template_g97kxul', form.current, '0odBJYhU5Mm_pVnMe')
+      .sendForm('service_axbm2yj', 'template_g97kxul', form.current, '0odBJYhU5Mm_pVnMe')
+      // .sendForm('service_vsq3vy4', 'template_g97kxul', form.current, '0odBJYhU5Mm_pVnMe')
       .then(
         () => {
           setSuccessMsg(`Thank You ${name}, Your Message Has Been Sent Successfully!`);
