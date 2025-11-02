@@ -2,7 +2,21 @@ import React, { useEffect, useState } from 'react';
 import { logo } from '../assets/index';
 import {FiMenu} from "react-icons/fi";
 import { IoMdClose } from "react-icons/io";
-import {FaInstagram,FaLinkedin, FaFacebook} from "react-icons/fa";
+import {FaGithub,FaLinkedin, FaFacebook} from "react-icons/fa";
+import { motion } from "framer-motion";
+
+const iconVariants = (duration) => ({
+  initial: { y: -10 },
+  animate: {
+    y: [10, -10],
+    transition: {
+      duration: duration,
+      ease: "linear",
+      repeat: Infinity,
+      repeatType: "reverse",
+    },
+  },
+});
 
 export default function NavBar() {
   const [activeLink, setActiveLink] = useState('Home');
@@ -14,6 +28,7 @@ export default function NavBar() {
     const handleScroll = () => {
       const homeSection = document.getElementById('Home');
       const aboutSection = document.getElementById('AboutUs');
+      const ExperienceSection = document.getElementById('internExperience');
       const TechnolohiesSection = document.getElementById('Technolohies');
       const projectsSection = document.getElementById('Projects');
       const contactSection = document.getElementById('ContectMe');
@@ -26,11 +41,18 @@ export default function NavBar() {
       ) {
         setActiveLink('Home');
       } else if (
-        scrollPosition < TechnolohiesSection.offsetTop &&
+        scrollPosition < ExperienceSection.offsetTop &&
         scrollPosition >= aboutSection.offsetTop
       ) {
         setActiveLink('AboutUs');
-      } else if (
+      } 
+       else if (
+        scrollPosition < projectsSection.offsetTop &&
+        scrollPosition >= ExperienceSection.offsetTop
+      ) {
+        setActiveLink('Experience');
+      }
+      else if (
         scrollPosition < projectsSection.offsetTop &&
         scrollPosition >= TechnolohiesSection.offsetTop
       ) {
@@ -75,6 +97,18 @@ export default function NavBar() {
               About
             </a>
           </li>
+<li>
+  <a
+    className={`text-xl tracking-wide cursor-pointer hover:text-designColor duration-300 ${
+      activeLink === 'internExperience' ? 'text-red-500 underline' : 'text-blue-500'
+    }`}
+    href="#internExperience"
+    onClick={() => setActiveLink('internExperience')}
+  >
+    Experience
+  </a>
+</li>
+
 
           <li>
             <a
@@ -116,8 +150,8 @@ export default function NavBar() {
           <div className="w-[80%] h-screen overflow-scroll absolute top-0 left-0 bg-gray-900 p-4 scrollbar-hide">
             <div className="flex flex-col gap-8 py-2 relative">
               <div>
-                <img className="w-32 rounded-full" src={logo} alt="logo" />
-                <p className="text-sm text-gray-400 mt-2">A software undergraduate student passionate about building innovative software solutions. Currently honing my skills in MERN Stack, with a keen interest in web development and Data science. You can find some of my projects here on GitHub, and I'm always open to collaboration and learning opportunities.
+                <img className="w-20 rounded-full" src={logo} alt="logo" />
+                <p className="text-sm text-gray-400 mt-2">Final-year Software Engineering undergraduate at the University of Kelaniya, passionate about designing and maintaining scalable software solutions. Experienced as an Intern Software Engineer at Prime Technologies Global (Pvt) Ltd, where I contributed to developing, testing, and improving software applications. Skilled in the MERN stack, with interests in web development and data science. I value teamwork, innovation, and continuous learning.
                 </p>
               </div>
 
@@ -126,7 +160,9 @@ export default function NavBar() {
             <a
               className={`text-xl tracking-wide cursor-pointer hover:text-designColor duration-300 ${activeLink === 'Home' ? 'text-red-500 underline' : 'text-blue-500'}`}
               href="#Home"
-              onClick={() => setActiveLink('Home')}
+              onClick={() =>{ setActiveLink('Home');
+                 setShowMenu(false);
+              }}
             >
               Home
             </a>
@@ -136,17 +172,38 @@ export default function NavBar() {
             <a
               className={`text-xl tracking-wide cursor-pointer hover:text-designColor duration-300 ${activeLink === 'AboutUs' ? 'text-red-500 underline' : 'text-blue-500'}`}
               href="#AboutUs"
-              onClick={() => setActiveLink('AboutUs')}
+              onClick={() =>{ setActiveLink('AboutUs')
+                  setShowMenu(false);
+              }
+              }
             >
               About
             </a>
           </li>
+<li>
+  <a
+    className={`text-xl tracking-wide cursor-pointer hover:text-designColor duration-300 ${
+      activeLink === 'internExperience' ? 'text-red-500 underline' : 'text-blue-500'
+    }`}
+    href="#internExperience"
+    onClick={() => {setActiveLink('internExperience')
+        setShowMenu(false);
+              }
+    }
+  >
+    Experience
+  </a>
+</li>
+
 
           <li>
             <a
               className={`text-xl tracking-wide cursor-pointer hover:text-designColor duration-300 ${activeLink === 'Technolohies' ? 'text-red-500 underline' : 'text-blue-500'}`}
               href="#Technolohies"
-              onClick={() => setActiveLink('Technolohies')}
+              onClick={() =>{ setActiveLink('Technolohies')
+                  setShowMenu(false);
+              }
+              }
             >
               Technologies
             </a>
@@ -156,7 +213,10 @@ export default function NavBar() {
             <a
               className={`text-xl tracking-wide cursor-pointer hover:text-designColor duration-300 ${activeLink === 'Projects' ? 'text-red-500 underline' : 'text-blue-500'}`}
               href="#Projects"
-              onClick={() => setActiveLink('Projects')}
+              onClick={() => {setActiveLink('Projects')
+                  setShowMenu(false);
+              }
+              }
             >
               Projects
             </a>
@@ -166,13 +226,51 @@ export default function NavBar() {
             <a
               className={`text-xl tracking-wide cursor-pointer hover:text-designColor duration-300 ${activeLink === 'ContectMe' ? 'text-red-500 underline' : 'text-blue-500'}`}
               href="#ContectMe"
-              onClick={() => setActiveLink('ContectMe')}
+              onClick={() =>{ setActiveLink('ContectMe')
+                  setShowMenu(false);
+              }
+              }
             >
               Contact
             </a>
           </li>
         </ul>
-              <div className="flex flex-col gap-4">
+        <div className="flex gap-4 items-center justify-center">
+  <motion.span
+    variants={iconVariants(1.5)}
+    initial="initial"
+    animate="animate"
+    className="bannerIcon"
+  >
+    <a href="https://github.com/NipunaSudesh" target="_blank" rel="noopener noreferrer">
+      <FaGithub className="text-white" />
+    </a>
+  </motion.span>
+
+  <motion.span
+    variants={iconVariants(2)}
+    initial="initial"
+    animate="animate"
+    className="bannerIcon"
+  >
+    <a href="https://www.linkedin.com/in/nipuna-sudesh-27a1a8253" target="_blank" rel="noopener noreferrer">
+      <FaLinkedin className="text-blue-500" />
+    </a>
+  </motion.span>
+
+  <motion.span
+    variants={iconVariants(2.5)}
+    initial="initial"
+    animate="animate"
+    className="bannerIcon"
+  >
+    <a href="https://www.facebook.com/nipuna.sudesh/52" target="_blank" rel="noopener noreferrer">
+      <FaFacebook className="text-red-400" />
+    </a>
+  </motion.span>
+</div>
+
+              {/* <div className="flex flex-col gap-4">
                 <h2 className="text-base uppercase font-titleFont mb-4">
                   Find me in
                 </h2>
@@ -187,7 +285,7 @@ export default function NavBar() {
                     <FaLinkedin />
                   </span>
                 </div>
-              </div>
+              </div> */}
               <span
                 onClick={() => setShowMenu(false)}
                 className="absolute top-4 right-4 text-gray-400 hover:text-designColor duration-300 text-2xl cursor-pointer"

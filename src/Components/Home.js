@@ -71,7 +71,9 @@ const container =(delay)=>({
                     initial="initial"
                     animate="animate"
             className='bannerIcon'>
-                <a href='https://github.com/NipunaSudesh'>
+                <a href='https://github.com/NipunaSudesh'
+                        target="_blank"
+          rel="noopener noreferrer">
                 <FaGithub className='text-white'/></a>
             </motion.div>
             <motion.div
@@ -79,7 +81,9 @@ const container =(delay)=>({
                     initial="initial"
                     animate="animate"
             className='bannerIcon'>
-                <a href='https://www.linkedin.com/in/nipuna-sudesh-27a1a8253/?lipi=urn%3Ali%3Apage%3Ad_flagship3_feed%3BlrJGSoIkQ%2B%2BTVScw3NZvKQ%3D%3D'>
+                <a href='https://www.linkedin.com/in/nipuna-sudesh-27a1a8253/?lipi=urn%3Ali%3Apage%3Ad_flagship3_feed%3BlrJGSoIkQ%2B%2BTVScw3NZvKQ%3D%3D'
+                        target="_blank"
+          rel="noopener noreferrer">
                 <FaLinkedin className=' text-blue-500'/></a>
             </motion.div>
             <motion.div
@@ -87,7 +91,9 @@ const container =(delay)=>({
             variants={iconVariants(2.5)}
             initial="initial"
             animate="animate" className='bannerIcon'>
-                <a href='https://www.facebook.com/nipuna.sudesh/52'>
+                <a href='https://www.facebook.com/nipuna.sudesh/52'
+                        target="_blank"
+          rel="noopener noreferrer">
                 <FaFacebook className='text-red-400'/></a>
             </motion.div>
         </div>
