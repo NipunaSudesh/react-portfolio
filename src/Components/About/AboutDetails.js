@@ -20,7 +20,7 @@ export default function AboutDetails(props) {
     animate="visible"
     className=' flex flex-col w-auto justify-center items-center bg-gray-200 rounded-lg'>
         <h1 className='text-xl font-bold text-center'>{props.title}</h1>
-        <p className='text-gray-700 text-base p-1 sm:p-2'> {props.des}</p>
+        <p className='text-gray-700 text-base  sm:p-2 p-2'> {props.des}</p>
     </motion.div>
 
   )
