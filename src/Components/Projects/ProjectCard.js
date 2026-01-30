@@ -62,8 +62,8 @@ export default function ProjectCard({
               target="_blank"
               rel="noopener noreferrer"
               className="flex-1 flex items-center justify-center gap-2
-              py-2 text-xs rounded-md bg-black/60 text-gray-300
-              hover:bg-black hover:text-designColor transition"
+              py-2 text-xs rounded-md bg-black/60 text-gray-200
+              hover:bg-black hover:text-designColor transition font-semibold"
             >
               <FaGithub />
               GitHub
@@ -76,8 +76,8 @@ export default function ProjectCard({
               target="_blank"
               rel="noopener noreferrer"
               className="flex-1 flex items-center justify-center gap-2
-              py-2 text-xs rounded-md bg-designColor text-black
-              hover:bg-designColor/80 transition"
+              py-2 text-xs rounded-md bg-designColor text-white
+              hover:bg-designColor/80 transition font-semibold"
             >
               <FaExternalLinkAlt />
               Live

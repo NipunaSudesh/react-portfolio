@@ -28,25 +28,27 @@ export default function Education() {
 in Software Engineering (UG)"
 
         /> */}
+        
     <motion.div 
     variants={container(0)}
     initial="hidden"
     animate="visible"
-    className=' flex flex-col w-auto justify-center items-center bg-gray-200 rounded-lg'>
+    className=' flex flex-col w-auto justify-center items-center bg-gray-200 rounded-lg p-2'>
         <h1 className='text-xl font-bold text-center '>BSc (Hons) Software Engineering (UG)</h1>
-        <p className='text-gray-700 text-base'>University of Kelaniya </p>
-        <p className='text-gray-700 text-base'>2022 - present </p>
+        <p className='text-gray-700 text-base'>University Of Kelaniya </p>
+        <p className='text-gray-700 text-base'>2022 - Present </p>
     </motion.div>
     <motion.div 
     variants={container(0.25)}
     initial="hidden"
     animate="visible"
-    className=' flex flex-col w-auto justify-center items-center bg-gray-200 rounded-lg'>
+    className=' flex flex-col w-auto justify-center items-center bg-gray-200 rounded-lg p-2'>
         <h1 className='text-xl font-bold text-center '>G.C.E. A/L (2020) - 2484193</h1>
         <p className='text-gray-700 text-base'>Combined Mathematics - A</p>
         <p className='text-gray-700 text-base'>Chemistry - B </p>
         <p className='text-gray-700 text-base'>Physics - B</p>
         <p className='text-gray-700 text-base'>Z-Score - 1.5348</p>
+
     </motion.div>
         </div>
       </motion.div>

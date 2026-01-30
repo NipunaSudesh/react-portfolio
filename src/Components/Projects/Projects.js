@@ -78,7 +78,7 @@ export default function Projects() {
         <h2 className="text-5xl font-bold text-white">
           Software Engineering Projects
         </h2>
-        <p className="text-gray-400 text-sm mt-3 max-w-2xl mx-auto">
+        <p className="text-gray-300 text-sm mt-3 max-w-2xl mx-auto">
           Practical projects demonstrating full-stack development,
           authentication, APIs, and modern frameworks.
         </p>

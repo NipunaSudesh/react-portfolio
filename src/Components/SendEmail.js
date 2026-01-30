@@ -91,7 +91,7 @@ export default function SendEmail() {
           )}
           <div className='w-full mt-5 lgl:flex gap-10'>
             <div className='w-full lgl:w-1/2 flex-row lgl:flex-col'>
-              <label className='text-sm text-gray-400 uppercase tracking-wide'>Your Name</label>
+              <label className='text-sm text-gray-200 uppercase tracking-wide'>Your Name</label>
               <input
                 type='text'
                 onChange={(e) => setName(e.target.value)}
@@ -102,7 +102,7 @@ export default function SendEmail() {
               />
             </div>
             <div className='w-full lgl:w-1/2 flex-row lgl:flex-col'>
-              <label className='text-sm text-gray-400 uppercase tracking-wide'>Your Phone Number</label>
+              <label className='text-sm text-gray-200 uppercase tracking-wide'>Your Phone Number</label>
               <input
                 type='text'
                 onChange={(e) => setNumber(e.target.value)}
@@ -114,7 +114,7 @@ export default function SendEmail() {
             </div>
           </div>
           <div>
-            <label className='text-sm text-gray-400 uppercase tracking-wide'>Your Email</label>
+            <label className='text-sm text-gray-200 uppercase tracking-wide'>Your Email</label>
             <input
               type='email'
               onChange={(e) => setEmail(e.target.value)}
@@ -125,7 +125,7 @@ export default function SendEmail() {
             />
           </div>
           <div>
-            <label className='text-sm text-gray-400 uppercase tracking-wide'>Subject</label>
+            <label className='text-sm text-gray-200 uppercase tracking-wide'>Subject</label>
             <input
               type='text'
               onChange={(e) => setSubject(e.target.value)}
@@ -136,7 +136,7 @@ export default function SendEmail() {
             />
           </div>
           <div>
-            <label className='text-sm text-gray-400 uppercase tracking-wide'>Message</label>
+            <label className='text-sm text-gray-200 uppercase tracking-wide'>Message</label>
             <textarea
               cols="30"
               rows="15"

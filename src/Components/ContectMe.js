@@ -47,10 +47,10 @@ export default function ContectMe() {
               alt='contactImg'></img>
               <div className='flex flex-col gap-1'>
                 <h3 className='text-3xl font-bold text-white mt-2'>Nipuna Sudesh</h3>
-                <p className='text-lg font-normal text-gray-400'> Software Engineer</p>
-                <p className='text-base tracking-wide text-gray-400 '>Software undergraduate passionate about innovative solutions. Currently honing skills in MERN Stack, web development, and data science</p>
-                <p className='text-base text-gray-400 flex items-center gap-2'>Phone : <span className='text-lightText hover:underline duration-300'>+94 766521915</span></p>
-                <p className=' text-base text-gray-400 flex items-center gap-2'>Email : <span className='text-lightText hover:underline'>nipunasudesh2000@gmail.com</span></p>
+                <p className='text-lg font-normal text-gray-300'> Software Engineer</p>
+                <p className='text-base tracking-wide text-gray-200 '>Software undergraduate passionate about innovative solutions. Currently honing skills in MERN Stack, web development, and data science</p>
+                <p className='text-base text-gray-300 flex items-center gap-2'>Phone : <span className='text-lightText hover:underline duration-300'>+94 766521915</span></p>
+                <p className=' text-base text-gray-300 flex items-center gap-2'>Email : <span className='text-lightText hover:underline'>nipunasudesh2000@gmail.com</span></p>
               </div>
               <div>
             <h2 className=' text-white text-base uppercase font-titleFont mb-2'>Find Me In</h2>
