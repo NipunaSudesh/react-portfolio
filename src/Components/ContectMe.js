@@ -30,7 +30,7 @@ export default function ContectMe() {
               <div 
                
               className='w-full'>
-      <h1 className=' flex justify-center items-center mt-5 text-6xl font-bold text-white'>contact With Me</h1>
+      <h1 className=' flex justify-center items-center mt-5 text-6xl font-bold text-white'>Contact With Me</h1>
       </div>
 
       <div className='w-full pt-10 lgl:flex-rows flex gap-4'>

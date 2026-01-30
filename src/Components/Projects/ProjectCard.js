@@ -1,46 +1,90 @@
-import React from 'react'
-import { FaGithub, FaGlobe } from "react-icons/fa";
-import { SiVercel } from "react-icons/si";
+import React from "react";
+import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
 
-export default function ProjectCard({ title, des, src, git,vercel, tech = [] }) {
+export default function ProjectCard({
+  title,
+  des,
+  src,
+  git,
+  live,
+  tech = [],
+}) {
   return (
-    <div className='h-[600px] px-12 py-10 shadow-shadowOne flex flex-col
-    bg-gradient-to-r from-bodyColor to-[#330080] group hover:bg-gradient-to-b
-    hover:from-gray-900 hover:to-gray-900 transition-colors duration-1000 rounded-[5%]'>
-      <div className='w-full   overflow-hidden rounded-lg'>
-        <img className='lgl:h-50 xl:h-55 w-full h-60 object-cover group-hover:scale-110 duration-300' 
-             src={src} alt='Project' />
+    <div
+      className="relative h-[480px] rounded-xl
+      bg-gradient-to-br from-[#0f172a] to-[#1e293b]
+      shadow-md hover:shadow-xl transition-all duration-300
+      overflow-hidden flex flex-col w-full"
+    >
+      {/* IMAGE */}
+      <div className="h-48 w-full overflow-hidden flex-shrink-0">
+        <img
+          src={src}
+          alt={title}
+          className="w-full h-full object-cover
+          transition-transform duration-300 hover:scale-105"
+        />
       </div>
-      <div className='w-full mt-5 flex gap-6'>
-        <div className='flex items-center justify-between'>
-          <h3 className='font-normal text-designColor text-2xl'>{title}</h3>
+
+      {/* CONTENT */}
+      <div className="px-4 py-4 flex flex-col flex-1">
+        <h3 className="text-lg font-semibold text-white mb-1">
+          {title}
+        </h3>
+
+        {/* DESCRIPTION */}
+        <p
+          className="text-[13px] text-gray-300 leading-relaxed
+          max-h-[100px] overflow-y-auto pr-1"
+        >
+          {des}
+        </p>
+
+        {/* TECH STACK */}
+        <div className="flex flex-wrap gap-1 mt-1">
+          {tech.map((item, index) => (
+            <span
+              key={index}
+              className="text-[11px] px-2 py-[2px] rounded-full
+              bg-white text-designColor
+              border border-designColor/30"
+            >
+              {item}
+            </span>
+          ))}
         </div>
-        <div className='flex gap-2'>
-        <a href={git} className='text-lg w-10 h-10 rounded-full bg-black inline-flex
-              justify-center items-center cursor-pointer text-gray-400
-              hover:text-designColor duration-300' target="_blank" rel="noopener noreferrer">
-            <FaGithub />
-          </a>
-          {title === "Weather App" && (
-            <a href={vercel} className='text-lg w-10 h-10 rounded-full bg-black inline-flex
-              justify-center items-center cursor-pointer text-gray-400
-              hover:text-designColor duration-300' target="_blank" rel="noopener noreferrer">
-              <SiVercel />
+
+        {/* ACTION BUTTONS */}
+        <div className="flex gap-2  pt-4 absolute bottom-4 left-4 right-4">
+          {git && (
+            <a
+              href={git}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex-1 flex items-center justify-center gap-2
+              py-2 text-xs rounded-md bg-black/60 text-gray-300
+              hover:bg-black hover:text-designColor transition"
+            >
+              <FaGithub />
+              GitHub
+            </a>
+          )}
+
+          {live && (
+            <a
+              href={live}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex-1 flex items-center justify-center gap-2
+              py-2 text-xs rounded-md bg-designColor text-black
+              hover:bg-designColor/80 transition"
+            >
+              <FaExternalLinkAlt />
+              Live
             </a>
           )}
         </div>
       </div>
-      <div>
-        <p className='text-sm tracking-wide mt-3 hover:text-gray-100 duration-300'>{des}</p>
-      </div>
-      <div className='flex text-center gap-2 items-center justify-center'>
-      {tech.map((item, index) => (
-            <p key={index} className='text-base p-1 bg-slate-400 text-blue-900 font-serif w-auto rounded-lg h-8'>
-              {item}
-            </p>
-          ))}
-
-      </div>
     </div>
-  )
+  );
 }
