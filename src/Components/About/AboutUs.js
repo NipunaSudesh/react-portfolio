@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import { my } from '../../assets';
-import AboutDetails from './AboutDetails';
 import Education from './Education';
 import Experience from './SoftSkills';
 import Skill from './Skill';
