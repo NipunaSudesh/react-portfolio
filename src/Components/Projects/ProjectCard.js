@@ -11,10 +11,10 @@ export default function ProjectCard({
 }) {
   return (
     <div
-      className="relative h-[520px] rounded-xl
+      className="relative h-[480px] rounded-xl
       bg-gradient-to-br from-[#0f172a] to-[#1e293b]
       shadow-md hover:shadow-xl transition-all duration-300
-      overflow-hidden flex flex-col"
+      overflow-hidden flex flex-col w-full"
     >
       {/* IMAGE */}
       <div className="h-48 w-full overflow-hidden flex-shrink-0">
@@ -32,7 +32,7 @@ export default function ProjectCard({
           {title}
         </h3>
 
-        {/* DESCRIPTION (SCROLLABLE, NO BUTTONS) */}
+        {/* DESCRIPTION */}
         <p
           className="text-[13px] text-gray-300 leading-relaxed
           max-h-[100px] overflow-y-auto pr-1"
@@ -41,7 +41,7 @@ export default function ProjectCard({
         </p>
 
         {/* TECH STACK */}
-        <div className="flex flex-wrap gap-1 mt-2 pt-2">
+        <div className="flex flex-wrap gap-1 mt-1">
           {tech.map((item, index) => (
             <span
               key={index}
@@ -53,37 +53,37 @@ export default function ProjectCard({
             </span>
           ))}
         </div>
-      </div>
 
-      {/* ACTION BUTTONS */}
-      <div className="px-4 pb-4 flex gap-2">
-        {git && (
-          <a
-            href={git}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="flex-1 flex items-center justify-center gap-2
-            py-2 text-xs rounded-md bg-black/60 text-gray-300
-            hover:bg-black hover:text-designColor transition"
-          >
-            <FaGithub />
-            GitHub
-          </a>
-        )}
+        {/* ACTION BUTTONS */}
+        <div className="flex gap-2  pt-4 absolute bottom-4 left-4 right-4">
+          {git && (
+            <a
+              href={git}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex-1 flex items-center justify-center gap-2
+              py-2 text-xs rounded-md bg-black/60 text-gray-300
+              hover:bg-black hover:text-designColor transition"
+            >
+              <FaGithub />
+              GitHub
+            </a>
+          )}
 
-        {live && (
-          <a
-            href={live}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="flex-1 flex items-center justify-center gap-2
-            py-2 text-xs rounded-md bg-designColor text-black
-            hover:bg-designColor/80 transition"
-          >
-            <FaExternalLinkAlt />
-            Live
-          </a>
-        )}
+          {live && (
+            <a
+              href={live}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex-1 flex items-center justify-center gap-2
+              py-2 text-xs rounded-md bg-designColor text-black
+              hover:bg-designColor/80 transition"
+            >
+              <FaExternalLinkAlt />
+              Live
+            </a>
+          )}
+        </div>
       </div>
     </div>
   );

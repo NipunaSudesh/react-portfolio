@@ -23,9 +23,9 @@ const projects = [
     "Express.js",
     "MongoDB",
     "Cloudinary",
-    "Performance Analysis",
-    "Web Sustainability",
-    "Research"
+    // "Performance Analysis",
+    // "Web Sustainability",
+    // "Research"
   ],
 },
   {
@@ -75,7 +75,7 @@ export default function Projects() {
     <section id="Projects" className="w-full py-16">
       {/* HEADER */}
       <div className="text-center mb-12">
-        <h2 className="text-4xl font-bold text-white">
+        <h2 className="text-5xl font-bold text-white">
           Software Engineering Projects
         </h2>
         <p className="text-gray-400 text-sm mt-3 max-w-2xl mx-auto">
@@ -84,20 +84,21 @@ export default function Projects() {
         </p>
       </div>
 
-      {/* GRID */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-8">
-        {projects.map((project, index) => (
-          <motion.div
-            key={index}
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: index * 0.08 }}
-            viewport={{ once: true }}
-          >
-            <ProjectCard {...project} />
-          </motion.div>
-        ))}
-      </div>
+<div className="flex flex-wrap gap-8 justify-center w-full">
+  {projects.map((project, index) => (
+    <motion.div
+      key={index}
+      initial={{ opacity: 0, y: 30 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.5, delay: index * 0.08 }}
+      viewport={{ once: true }}
+      className="w-full sm:w-[370px] lg:w-[400px]"
+    >
+      <ProjectCard {...project} />
+    </motion.div>
+  ))}
+</div>
+
     </section>
   );
 }
