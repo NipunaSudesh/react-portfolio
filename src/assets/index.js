@@ -13,11 +13,13 @@ import mobile from "./images/mobile.png"
 import pickMatch from "./images/pickMatch.png"
 import weather from "./images/weather.png"
 import primelogo from "./images/primelogo.svg"
+import skinora from "./images/skinora.png"
 
 
 
 export{
     logo,
+    skinora,
     my,
     eCom,
     profile,
