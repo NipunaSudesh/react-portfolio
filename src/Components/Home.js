@@ -50,7 +50,7 @@ const container =(delay)=>({
                 variants={container(1)}
                 initial="hidden"
                 animate="visible"
-            className='text-white'> Final-year Software Engineering undergraduate at the University of Kelaniya, passionate about designing and maintaining scalable software solutions. Experienced as an Intern Software Engineer at Prime Technologies Global (Pvt) Ltd, where I contributed to developing, testing, and improving software applications. Skilled in the MERN stack, with interests in web development and data science. I value teamwork, innovation, and continuous learning. </motion.p>
+            className='text-white'> Final-year Software Engineering undergraduate at the University of Kelaniya with hands-on experience developing full-stack web applications using the MERN stack, Laravel, and Vue.js. Completed an internship at Prime Technologies Global (Pvt) Ltd, contributing to real-world software development, testing, debugging, and performance improvements in production environments. Experienced in designing scalable systems, implementing secure REST APIs, and building responsive user interfaces. Passionate about data-driven technologies and modern web development, with a strong commitment to clean code, continuous learning, and delivering reliable, maintainable software solutions. Key strengths include problem-solving, adaptability, and effective collaboration within Agile teams. </motion.p>
             {/* <motion.p
                 variants={container(1)}
                 initial="hidden"
